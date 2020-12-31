@@ -205,35 +205,6 @@ function readMore3() {
   }
 }
 
-const menuBtn = document.querySelector(".menu-btn");
-const navUl = document.querySelector(".main-nav-v");
-let menuOpen = false;
-if (menuBtn) {
-  menuBtn.addEventListener("click", () => {
-    if (!menuOpen) {
-      menuBtn.classList.add("open");
-      navUl.classList.add("show");
-      menuOpen = true;
-    } else {
-      menuBtn.classList.remove("open");
-      navUl.classList.remove("show");
-      menuOpen = false;
-    }
-  });
-}
-
-const menuLink = document.querySelectorAll(".main-nav-v a");
-
-menuLink.forEach((link) => {
-  if (link) {
-    link.addEventListener("click", () => {
-      menuBtn.classList.remove("open");
-      navUl.classList.remove("show");
-      menuOpen = false;
-    });
-  }
-});
-
 const boxes = document.querySelectorAll(".about-extra");
 window.addEventListener("scroll", checkBoxes);
 

@@ -1251,7 +1251,7 @@ footer .copyright {
     padding: 0;
     background: transparent;
     outline: 0;
-    right: 15px;
+    right: 25px;
     top: 15px;
     margin-top: -5px;
     cursor: pointer;
@@ -1399,7 +1399,6 @@ footer .copyright {
   .nav1:target .menuicon__bar1:nth-child(2),
   .nav--open1 .menuicon__bar1:nth-child(2) {
     transform: rotate(45deg);
-    color: red;
   }
   .nav1:target .menuicon__bar1:nth-child(3),
   .nav--open1 .menuicon__bar1:nth-child(3) {
@@ -1416,6 +1415,13 @@ footer .copyright {
     transform: translateY(0);
   }
 
+  .red {
+    color: #d00b02;
+  }
+
+  .white {
+    color: #ffffff;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1581,7 +1587,6 @@ footer .copyright {
   .nav__link1 {
     font-size: 1.5rem;
   }
-
 
   #intro .intro-info .btn-get-started,
   #intro .intro-info .btn-services {
