@@ -1321,7 +1321,8 @@ footer .copyright {
   .nav__link1:hover,
   .nav__link1:focus {
     outline: 0;
-    background-color: rgba(252, 249, 249, 0.5);
+    color: white;
+    /* background-color: rgba(252, 249, 249, 0.5); */
   }
   .menuicon1 {
     display: block;
