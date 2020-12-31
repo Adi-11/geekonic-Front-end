@@ -105,35 +105,26 @@
     });
   });
 
-
   // flitering in glimps
-  // $(window).on("load", function () {
-  //   var portfolioIsotope = $(".portfolio-container").isotope({
-  //     itemSelector: ".portfolio-item",
-  //   });
-  //   $("#portfolio-flters li").on("click", function () {
-  //     $("#portfolio-flters li").removeClass("filter-active");
-  //     $(this).addClass("filter-active");
-
-  //     portfolioIsotope.isotope({ filter: $(this).data("filter") });
-  //   });
-  // });
-
-  $(document).ready(function(){
-    $('.list').click(function(){
-      const value = $(this).attr('data-filter');
-      if(value=='all'){
-        $('.portfolio-item').show('1000')
+  $(document).ready(function () {
+    $(".list").click(function () {
+      const value = $(this).attr("data-filter");
+      if (value == "all") {
+        $(".portfolio-item").show("1000");
       } else {
-        $('.portfolio-item').not('.'+value).hide('1000');
-        $('.portfolio-item').filter('.'+value).show('1000');
+        $(".portfolio-item")
+          .not("." + value)
+          .hide("1000");
+        $(".portfolio-item")
+          .filter("." + value)
+          .show("1000");
       }
-    })
+    });
     //add active class on selected
-    $('.list').click(function(){
-      $(this).addClass('active').siblings().removeClass('active')
-    })
-  })
+    $(".list").click(function () {
+      $(this).addClass("active").siblings().removeClass("active");
+    });
+  });
 
   // jQuery counterUp (used in Whu Us section)
   $('[data-toggle="counter-up"]').counterUp({
@@ -261,3 +252,58 @@ function checkBoxes() {
     }
   });
 }
+
+// mobile navigation
+function myFunction() {
+  var x = document.getElementById("menu1");
+  if (x.style.display === "none") {
+    x.style.display = "inline-block";
+  } else {
+    x.style.display = "none";
+  }
+  document.querySelector("#nav1").classList.toggle("nav--open1");
+}
+
+function myFunction1() {
+  var x = document.getElementById("menu1");
+  if (x.style.display === "none") {
+    x.style.display = "inline-block";
+  }
+}
+
+myFunction();
+myFunction1();
+
+
+
+const nav = document.querySelector("#nav1");
+const menu = document.querySelector("#menu1");
+const menuToggle = document.querySelector(".nav__toggle1");
+let isMenuOpen = false;
+
+menuToggle.addEventListener("click", (e) => {
+  e.preventDefault();
+  isMenuOpen = !isMenuOpen;
+
+  menuToggle.setAttribute("aria-expanded", String(isMenuOpen));
+  nav.classList.toggle("nav--open1");
+});
+
+nav.addEventListener("keydown", (e) => {
+  if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
+    return;
+  }
+
+  const menuLinks = menu.querySelectorAll(".nav__link1");
+  if (e.keyCode === 9) {
+    if (e.shiftKey) {
+      if (document.activeElement === menuLinks[0]) {
+        menuToggle.focus();
+        e.preventDefault();
+      }
+    } else if (document.activeElement === menuToggle) {
+      menuLinks[0].focus();
+      e.preventDefault();
+    }
+  }
+});
