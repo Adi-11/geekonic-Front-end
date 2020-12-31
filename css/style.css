@@ -54,7 +54,7 @@ input[type="number"]:focus,
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000;
+  background: black;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1251,7 +1251,7 @@ footer .copyright {
     padding: 0;
     background: transparent;
     outline: 0;
-    right: 25px;
+    right: 30px;
     top: 15px;
     margin-top: -5px;
     cursor: pointer;
@@ -1270,7 +1270,7 @@ footer .copyright {
   .nav__menu1 {
     /* height: 100vh !important; */
     width: 87%;
-    padding-top: 100px;
+    padding-top: 30px;
     list-style: none;
     display: block !important;
     flex-direction: column;
@@ -1280,6 +1280,7 @@ footer .copyright {
     z-index: 10000 !important;
     visibility: hidden;
   }
+
   .nav__item1 {
     font-weight: 700;
     margin-top: 4.5vh auto;
@@ -1311,13 +1312,13 @@ footer .copyright {
     display: block;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 5px;
     font-size: 2rem;
     font-weight: 500;
     font-family: Frijole;
     text-decoration: none;
     padding: 1rem;
   }
+
   .nav__link1:hover,
   .nav__link1:focus {
     outline: 0;

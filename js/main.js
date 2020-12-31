@@ -5,7 +5,7 @@
   $(window).on("load", function () {
     if ($("#loading").length) {
       $("#loading")
-        .delay(300)
+        .delay(4000)
         .fadeOut("slow", function () {
           $(this).remove();
         });
