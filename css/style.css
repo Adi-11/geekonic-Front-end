@@ -1243,7 +1243,21 @@ footer .copyright {
     display: block;
     height: 100vh;
   }
-
+  /* Recently_Added */
+  @media screen and (max-height: 525px) {
+    .nav__link1 {
+      color: #d00b02;
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.5rem !important;
+      font-weight: 500;
+      font-family: Frijole;
+      text-decoration: none;
+      padding: 0.4rem!important;
+    }
+  }
+  /* Recently*/
   .nav__toggle1 {
     display: inline-block;
     position: absolute;
@@ -1268,11 +1282,18 @@ footer .copyright {
   }
 
   .nav__menu1 {
+    /* display: inline-block; */
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+   right: 0;
     /* height: 100vh !important; */
-    width: 87%;
-    padding-top: 30px;
+    /* width: 87%; */
+    width: 100%;
+    /* padding-top: 30px; */
+    padding: 30px;
     list-style: none;
-    display: block !important;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     height: auto;
@@ -1582,12 +1603,12 @@ footer .copyright {
     padding: 0;
   }
 
-  .nav__item1 {
+  /* .nav__item1 {
     font-weight: 400;
-  }
-  .nav__link1 {
+  } */
+  /* .nav__link1 {
     font-size: 1.5rem;
-  }
+  } */
 
   #intro .intro-info .btn-get-started,
   #intro .intro-info .btn-services {
