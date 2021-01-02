@@ -110,12 +110,12 @@
     $(".list").click(function () {
       const value = $(this).attr("data-filter");
       if (value == "all") {
-        $(".portfolio-item").show("1000");
+        $("#glimps .carousel-cell").show("1000");
       } else {
-        $(".portfolio-item")
+        $("#glimps .carousel-cell")
           .not("." + value)
           .hide("1000");
-        $(".portfolio-item")
+        $("#glimps .carousel-cell")
           .filter("." + value)
           .show("1000");
       }
@@ -245,8 +245,6 @@ function myFunction1() {
 myFunction();
 myFunction1();
 
-
-
 const nav = document.querySelector("#nav1");
 const menu = document.querySelector("#menu1");
 const menuToggle = document.querySelector(".nav__toggle1");
@@ -277,4 +275,27 @@ nav.addEventListener("keydown", (e) => {
       e.preventDefault();
     }
   }
+});
+
+var carousel = document.querySelector("#glimps .carousel");
+var flkty = new Flickity(carousel, {
+  groupCells: true,
+  wrapAround: true,
+  fade: true,
+  dragThreshold: 100
+});
+
+var imgs = carousel.querySelectorAll("img");
+var hasClassName = document.querySelector("#glimps .carousel-cell");
+// get transform property
+var docStyle = document.documentElement.style;
+var transformProp =
+  typeof docStyle.transform == "string" ? "transform" : "WebkitTransform";
+
+flkty.on("scroll", function () {
+  flkty.slides.forEach(function (slide, i) {
+    var img = imgs[i];
+    var x = ((slide.target + flkty.x) * -1) / 3;
+    img.style[transformProp] = "translateX(" + x + "px)";
+  });
 });

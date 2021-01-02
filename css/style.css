@@ -330,6 +330,7 @@ input[type="number"]:focus,
   position: relative;
   overflow: hidden;
 }
+
 .hover-zoomin img {
   width: 100%;
   height: auto;
@@ -515,6 +516,7 @@ input[type="number"]:focus,
 
 #services .box .icon {
   margin-top: 40px;
+  border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -699,6 +701,60 @@ input[type="number"]:focus,
   margin-right: 0;
 }
 
+#glimps .carousel {
+  box-shadow: 0 10px 10px rgba(49, 9, 9, 0.664),
+    0px 0px 20px rgba(46, 6, 6, 0.329);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: screen;
+  border-radius: 5px;
+  height: 30%;
+}
+
+#glimps .carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+#glimps .carousel-cell img {
+  display: block;
+  height: 400px;
+}
+
+#glimps .carousel-cell .portfolio-info {
+  position: absolute;
+  right: 0;
+  /* bottom: 0; */
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transition: 0.2s linear;
+  font-size: 2rem;
+  color: red;
+}
+
+#glimps .carousel-cell:hover .portfolio-info {
+  opacity: 1;
+}
+
+#glimps .carousel-cell .portfolio-info div a i {
+  margin-top: 10%;
+  color: red;
+  font-size: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#glimps .carousel-cell:hover .portfolio-info div a i {
+  transform: scale(1.1);
+}
+
+/*  
+
 #glimps .portfolio-item {
   position: relative;
   overflow: hidden;
@@ -792,6 +848,7 @@ input[type="number"]:focus,
   border-radius: 20px;
   opacity: 1;
 }
+*/
 /* Glimps end */
 
 /* guest start */
@@ -858,7 +915,7 @@ input[type="number"]:focus,
   height: 100%;
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  transform: rotateY(calc(var(--i) * 40deg)) translateZ(400px);
   -webkit-box-reflect: below 0px linear-gradient;
 }
 
@@ -869,6 +926,25 @@ input[type="number"]:focus,
   width: 100%;
   object-fit: cover;
 }
+
+#team .box span details {
+  display: none;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  transform: scaleY(0);
+  transition: transform 0.5s;
+}
+
+#team .box span:hover details{
+  transform: scaleY(1);
+}
+
+
+
+
 
 #team .second-row {
 }
@@ -963,6 +1039,14 @@ input[type="number"]:focus,
 }
 #contact .contact-body .map-view {
   box-shadow: 2px 0px 30px rgba(58, 2, 2, 0.1);
+}
+
+#contact .contact-body .map-view .map-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 #contact .contact-body .map-view .info i {
@@ -1126,9 +1210,11 @@ footer {
 }
 
 footer .container {
+  margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-bottom: 30px;
 }
 
 footer .container .sec {
@@ -1137,6 +1223,10 @@ footer .container .sec {
 
 footer .container .sec.aboutus {
   width: 40%;
+}
+
+footer .container .sec.contact {
+  display: none;
 }
 
 footer .container h2 {
@@ -1166,35 +1256,40 @@ footer .copyright {
   margin: auto;
 }
 
-.sci {
+footer .sci {
   margin-top: 20px;
   display: flex;
-}
-
-.sci li {
-  list-style: none;
-}
-
-.sci li a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin-right: 30px;
-  text-decoration: none;
-  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+  margin-right: -15px;
 }
 
-.sci li a:hover {
-  background: #f00;
-}
-
-.sci li a i {
-  color: rgb(255, 255, 255);
+footer .sci .item {
   font-size: 2rem;
+  align-items: center;
+}
+
+footer .sci .item a {
+  color: rgb(255, 0, 0);
+  margin-left: -3px;
+}
+
+footer .sci .item a i {
+  transition: all 0.5s ease-in-out;
+}
+
+footer .sci .item a i:hover {
+  transform: scale(1.1);
+}
+
+footer .sci .item a img {
+  width: 40px;
+  transition: all 0.5s ease-in-out;
+}
+
+footer .sci .item a img:hover {
+  transform: scale(1.1);
 }
 
 /* footer end */
@@ -1409,6 +1504,7 @@ footer .copyright {
   .nav--open1 .nav__menu1 {
     z-index: 10000 !important;
     visibility: visible;
+    margin-left: 0%;
   }
   .nav1:target .nav__item1,
   .nav--open1 .nav__item1 {
@@ -1544,6 +1640,14 @@ footer .copyright {
     font-size: 1.5rem;
   }
 
+  #glimps .carousel {
+    height: 300px;
+  }
+
+  #glimps .carousel-cell img {
+    height: 300px;
+  }
+
   iframe {
     border-radius: 10px;
     border: 0;
@@ -1553,6 +1657,10 @@ footer .copyright {
 
   #contact .contact-body .map-view .map-details {
     display: none;
+  }
+
+  footer .container .sec.contact {
+    display: block;
   }
 }
 
@@ -1596,6 +1704,14 @@ footer .copyright {
 
   #services .box .icon {
     margin-top: 40px;
+  }
+
+  #glimps .carousel {
+    height: 200px;
+  }
+
+  #glimps .carousel-cell img {
+    height: 200px;
   }
 }
 
