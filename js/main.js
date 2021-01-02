@@ -282,7 +282,7 @@ var flkty = new Flickity(carousel, {
   groupCells: true,
   wrapAround: true,
   fade: true,
-  dragThreshold: 100
+  dragThreshold: 100,
 });
 
 var imgs = carousel.querySelectorAll("img");
