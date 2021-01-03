@@ -460,6 +460,7 @@ input[type="number"]:focus,
   opacity: 1;
   padding: 60px 0 40px 0;
   box-shadow: inset 0px 0px 12px 0px rgba(255, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 #services {
@@ -945,7 +946,6 @@ input[type="number"]:focus,
 #team .box span .details p {
   color: red;
 }
-
 
 #team .box span:hover details {
   transform: scaleY(1);
@@ -1686,7 +1686,10 @@ footer .sci .item a img:hover {
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  main {
+    overflow: hidden;
+  }
   .menu-btn {
     display: block;
     margin-right: 50px;
@@ -1737,7 +1740,7 @@ footer .sci .item a img:hover {
   }
 }
 
-@media (max-width: 300px) {
+@media screen and (max-width: 300px) {
   #intro .intro-info h1 {
     max-width: 200px;
     font-size: 1.3rem;
@@ -1745,7 +1748,7 @@ footer .sci .item a img:hover {
   }
 }
 
-@media (max-width: 280px) {
+@media screen and (max-width: 280px) {
   #services .box {
     margin-bottom: 30px;
   }
