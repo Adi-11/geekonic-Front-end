@@ -151,42 +151,6 @@ function readMore() {
   }
 }
 
-const dots1 = document.getElementById("dots1");
-const moreText1 = document.getElementById("more1");
-const btnText1 = document.getElementById("myBtn1");
-
-btnText1.addEventListener("click", readMore1);
-
-function readMore1() {
-  if (dots1.style.display === "none") {
-    dots1.style.display = "inline";
-    btnText1.innerHTML = "Read more";
-    moreText1.style.display = "none";
-  } else {
-    dots1.style.display = "none";
-    btnText1.innerHTML = "Read less";
-    moreText1.style.display = "inline";
-  }
-}
-
-const dots2 = document.getElementById("dots2");
-const moreText2 = document.getElementById("more2");
-const btnText2 = document.getElementById("myBtn2");
-
-btnText2.addEventListener("click", readMore2);
-
-function readMore2() {
-  if (dots2.style.display === "none") {
-    dots2.style.display = "inline";
-    btnText2.innerHTML = "Read more";
-    moreText2.style.display = "none";
-  } else {
-    dots2.style.display = "none";
-    btnText2.innerHTML = "Read less";
-    moreText2.style.display = "inline";
-  }
-}
-
 const dots3 = document.getElementById("dots3");
 const moreText3 = document.getElementById("more3");
 const btnText3 = document.getElementById("myBtn3");

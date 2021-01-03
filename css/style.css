@@ -495,7 +495,7 @@ input[type="number"]:focus,
 
 #services .box {
   padding: 45px;
-  height: 450px;
+  height: 470px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -927,24 +927,29 @@ input[type="number"]:focus,
   object-fit: cover;
 }
 
-#team .box span details {
+#team .box span .details {
   display: none;
-  top: 10px;
-  left: 10px;
-  bottom: 10px;
-  right: 10px;
+  align-items: center;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.8);
   transform: scaleY(0);
-  transition: transform 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 
-#team .box span:hover details{
+#team .box span img:hover ~ .details {
+  display: block;
   transform: scaleY(1);
 }
 
+#team .box span .details h2,
+#team .box span .details p {
+  color: red;
+}
 
 
-
+#team .box span:hover details {
+  transform: scaleY(1);
+}
 
 #team .second-row {
 }
@@ -1339,6 +1344,20 @@ footer .sci .item a img:hover {
     height: 100vh;
   }
 
+  @media screen and (max-height: 525px) {
+    .nav__link1 {
+      color: #d00b02;
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.5rem !important;
+      font-weight: 500;
+      font-family: Frijole;
+      text-decoration: none;
+      padding: 0.4rem !important;
+    }
+  }
+
   .nav__toggle1 {
     display: inline-block;
     position: absolute;
@@ -1363,11 +1382,14 @@ footer .sci .item a img:hover {
   }
 
   .nav__menu1 {
-    /* height: 100vh !important; */
-    width: 87%;
-    padding-top: 30px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    padding: 30px;
     list-style: none;
-    display: block !important;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     height: auto;
@@ -1462,7 +1484,7 @@ footer .sci .item a img:hover {
     display: block;
     position: fixed;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     width: 284vmax;
     height: 284vmax;
     top: -142vmax;
