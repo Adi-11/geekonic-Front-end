@@ -105,7 +105,31 @@
     });
   });
 
-  // flitering in glimps
+  // var owl = $("#glimps .owl-carousel").owlCarousel({
+  //   loop: true,
+  //   margin: 10,
+  //   nav: true,
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //     },
+  //     600: {
+  //       items: 3,
+  //     },
+  //     1000: {
+  //       items: 5,
+  //     },
+  //   },
+  // });
+
+  // $("#glimps .owl-filter-bar").on("click", ".item", function () {
+  //   var $item = $(this);
+  //   var filter = $item.data("owl-filter");
+
+  //   owl.owlcarousel2_filter(filter);
+  // });
+
+  //flitering in glimps
   $(document).ready(function () {
     $(".list").click(function () {
       const value = $(this).attr("data-filter");
