@@ -148,7 +148,8 @@ input[type="number"]:focus,
 #header .logo img {
   padding: 0;
   margin: 7px 0;
-  max-height: -webkit-fill-available;
+  max-height: 40px;
+  max-width: 40px;
 }
 
 .main-pages {

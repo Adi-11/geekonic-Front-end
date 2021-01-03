@@ -115,6 +115,9 @@
         $("#glimps .carousel-cell")
           .not("." + value)
           .hide("1000");
+        // $("#glimps .carousel-cell")
+        //   .not("." + value)
+        //   .css("display", "none");
         $("#glimps .carousel-cell")
           .filter("." + value)
           .show("1000");
