@@ -138,10 +138,17 @@ input[type="number"]:focus,
   text-transform: uppercase;
 }
 
+@font-face {
+  font-family: "SheepingDogs";
+  src: url("SheepingDogs.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
 #header .logo h1 a span,
 #header .logo h1 a span:hover {
-  color: #ffffff;
   font-family: Frijole;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -1055,6 +1062,10 @@ input[type="number"]:focus,
   margin-left: -15px;
 }
 
+#contact .contact-body .map-view .info {
+  display: contents;
+}
+
 #contact .contact-body .map-view .info i {
   color: red;
   font-size: 3rem;
@@ -1063,6 +1074,8 @@ input[type="number"]:focus,
 #contact .contact-body .map-view .info p {
   color: white;
   font-size: 1rem;
+  margin-top: revert;
+  margin-left: -50px;
 }
 
 iframe {

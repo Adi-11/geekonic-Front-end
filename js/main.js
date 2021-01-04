@@ -139,12 +139,9 @@
         $("#glimps .carousel-cell")
           .not("." + value)
           .hide("1000");
-        // $("#glimps .carousel-cell")
-        //   .not("." + value)
-        //   .css("display", "none");
         $("#glimps .carousel-cell")
           .filter("." + value)
-          .show("1000");
+          .show("1000")
       }
     });
     //add active class on selected
@@ -159,6 +156,34 @@
     time: 1000,
   });
 })(jQuery);
+
+var img = document.querySelectorAll("#glimps .carousel img");
+
+function glimpses(imgs) {
+  var carousel = document.querySelector("#glimps .carousel");
+  var flkty = new Flickity(carousel, {
+    groupCells: true,
+    wrapAround: true,
+    fade: true,
+    dragThreshold: 100,
+  });
+
+  // var imgs = carousel.querySelectorAll("img");
+  var hasClassName = document.querySelector("#glimps .carousel-cell");
+  // get transform property
+  var docStyle = document.documentElement.style;
+  var transformProp =
+    typeof docStyle.transform == "string" ? "transform" : "WebkitTransform";
+
+  flkty.on("scroll", function () {
+    flkty.slides.forEach(function (slide, i) {
+      var img = imgs[i];
+      var x = ((slide.target + flkty.x) * -1) / 3;
+      img.style[transformProp] = "translateX(" + x + "px)";
+    });
+  });
+}
+glimpses(img);
 
 const dots = document.getElementById("dots");
 const moreText = document.getElementById("more");
@@ -268,25 +293,16 @@ nav.addEventListener("keydown", (e) => {
   }
 });
 
-var carousel = document.querySelector("#glimps .carousel");
-var flkty = new Flickity(carousel, {
-  groupCells: true,
-  wrapAround: true,
-  fade: true,
-  dragThreshold: 100,
-});
-
-var imgs = carousel.querySelectorAll("img");
-var hasClassName = document.querySelector("#glimps .carousel-cell");
-// get transform property
-var docStyle = document.documentElement.style;
-var transformProp =
-  typeof docStyle.transform == "string" ? "transform" : "WebkitTransform";
-
-flkty.on("scroll", function () {
-  flkty.slides.forEach(function (slide, i) {
-    var img = imgs[i];
-    var x = ((slide.target + flkty.x) * -1) / 3;
-    img.style[transformProp] = "translateX(" + x + "px)";
-  });
+$(window).scroll(function () {
+  var triggerBottom = window.innerHeight * 6.2;
+  if ($(this).scrollTop() > triggerBottom) {
+    // $("#team .box span").css({
+    //   transform: "rotateY(calc(var(--i) * 40deg)) translateZ(400px);",
+    // });
+    $("#team .box").css({
+      display: "block",
+    });
+  } else {
+    $("#team .box").css({ display: "none" });
+  }
 });
