@@ -139,17 +139,18 @@ input[type="number"]:focus,
 }
 
 @font-face {
-  font-family: "SheepingDogs";
-  src: url("SheepingDogs.ttf");
-  font-style: normal;
-  font-weight: 400;
+  font-family: SheepingDogs;
+  font-size: larger;
+  font-weight: bolder;
+  src: url(./SheepingDogs.ttf);
 }
 
 #header .logo h1 a span,
 #header .logo h1 a span:hover {
-  font-family: Frijole;
+  font-family: SheepingDogs;
   color: #ffffff;
   text-decoration: none;
+  font-size: 3rem;
 }
 
 #header .logo img {
