@@ -2,6 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Frijole&family=Langar&family=Shadows+Into+Light&family=Special+Elite&display=swap");
 
+@font-face {
+  font-family: SheepingDogs;
+  font-size: larger;
+  font-weight: bolder;
+  src: url(./SheepingDogs.ttf);
+}
+
 * {
   font-family: "Open Sans", sans-serif;
 }
@@ -141,7 +148,8 @@ input[type="number"]:focus,
 #header .logo h1 a span,
 #header .logo h1 a span:hover {
   color: #ffffff;
-  font-family: Frijole;
+  /* font-family: Frijole; */
+  font-family: SheepingDogs;
   text-decoration: none;
 }
 
@@ -1437,15 +1445,15 @@ footer .copyright {
     transform: translateY(0);
   }
 
-  .red {
-    color: #d00b02;
-  }
+
 
   .white {
     color: #ffffff;
   }
 }
-
+.red {
+  color: #d00b02!important;
+}
 @media screen and (max-width: 1000px) {
   .main-nav-v,
   .main-nav-v * {

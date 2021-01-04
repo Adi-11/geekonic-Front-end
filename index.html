@@ -1,731 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Geekonix</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicons -->
-    <link href="img/Geekonix-Logo_Black.ico" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>Geekonix</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <link href="img/Geekonix-Logo_Black.ico" rel="icon" />
 
-    <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet" />
 
-    <!-- Libraries CSS Files -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
-    />
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Libraries CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-  <body>
-    <div id="loading">
-      <div class="multi-spinner-container">
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="loading">
+    <div class="multi-spinner-container">
+      <div class="multi-spinner">
         <div class="multi-spinner">
           <div class="multi-spinner">
             <div class="multi-spinner">
               <div class="multi-spinner">
-                <div class="multi-spinner">
-                  <div class="multi-spinner"></div>
-                </div>
+                <div class="multi-spinner"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="contianer">
-      <header id="header" class="fixed-top">
-        <div class="container">
-          <div class="logo float-left">
-            <h1 class="text-light">
-              <a href="#intro" class="scrollto"
-              data-toggle="tooltip" title="GEEKONIX"><img
-                  src="img/gk/Geekonix Logo_White.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <span>Geekonix</span>
-              </a>
-            </h1>
-          </div>
-
-          <nav class="main-nav-v float-right">
-            <ul>
-              <li class="active"><a href="#intro" class="scrollto">Home</a></li>
-              <li><a href="#about" class="scrollto">About Us</a></li>
-              <li><a href="#services" class="scrollto">Clubs</a></li>
-              <li><a href="#glimps" class="scrollto">Glimpse</a></li>
-              <li><a href="#team" class="scrollto">Guests</a></li>
-              <li><a href="#contact" class="scrollto">Contact Us</a></li>
-            </ul>
-          </nav>
-
-          <nav class="nav1 nav--open1"   id="nav1"   role="navigation">
-            
-            <ul class="nav__menu1" id="menu1" tabindex="-1" aria-label="main navigation" >
-              <li class="nav__item1"><a href="#intro" class="nav__link1 scrollto" onclick="myFunction()">Home </a></li>
-              <li class="nav__item1"><a href="#about" class="nav__link1 scrollto" onclick="myFunction()">About Us </a></li>
-              <li class="nav__item1"><a href="#services" class="nav__link1 scrollto" onclick="myFunction()">Clubs </a></li>
-              <li class="nav__item1"><a href="#glimps" class="nav__link1 scrollto" onclick="myFunction()">Glimpse </a></li>
-              <li class="nav__item1"><a href="#team" class="nav__link1 scrollto" onclick="myFunction()">Guests </a></li>
-              <li class="nav__item1"><a href="#contact" class="nav__link1 scrollto" onclick="myFunction()">Contact Us </a></li>
-            
-            </ul>
-       
-            <!-- MENU TOGGLE BUTTON -->
-            <a href="#nav1" class="nav__toggle1" role="button" aria-expanded="false" aria-controls="menu" onclick="myFunction1()">
-              <svg class="menuicon1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                <title>Toggle Menu</title>
-                <g>
-                  <line class="menuicon__bar1" x1="13" y1="16.5" x2="37" y2="16.5"/>
-                  <line class="menuicon__bar1" x1="13" y1="24.5" x2="37" y2="24.5"/>
-                  <line class="menuicon__bar1 red" x1="13" y1="24.5" x2="37" y2="24.5"/>
-                  <line class="menuicon__bar1" x1="13" y1="32.5" x2="37" y2="32.5"/>
-                  <circle class="menuicon__circle1 white" r="23" cx="25" cy="25"/>
-                </g>
-              </svg>
+  </div>
+  <div class="contianer">
+    <header id="header" class="fixed-top">
+      <div class="container">
+        <div class="logo float-left">
+          <h1 class="text-light">
+            <a href="#intro" class="scrollto" data-toggle="tooltip" title="GEEKONIX"><img
+                src="img/gk/Geekonix Logo_White.png" alt="" class="img-fluid" />
+              <span><span class="red">G</span>ee<span class="red">koni</span>x</span>
             </a>
-            
-            <!-- ANIMATED BACKGROUND ELEMENT -->
-            <div class="splash1"></div>
-            
-          </nav>
+          </h1>
         </div>
-      </header>
 
-      <section id="intro" class="clearfix">
-        <div class="container">
-          <div class="intro-info">
-            <h1>We Do More<br /><span>Than You Might</span><br />Imagine.</h1>
-            <!-- <div class="intro-link">
+        <nav class="main-nav-v float-right">
+          <ul>
+            <li class="active"><a href="#intro" class="scrollto">Home</a></li>
+            <li><a href="#about" class="scrollto">About Us</a></li>
+            <li><a href="#services" class="scrollto">Clubs</a></li>
+            <li><a href="#glimps" class="scrollto">Glimpse</a></li>
+            <li><a href="#team" class="scrollto">Guests</a></li>
+            <li><a href="#contact" class="scrollto">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav1 nav--open1" id="nav1" role="navigation">
+
+          <ul class="nav__menu1" id="menu1" tabindex="-1" aria-label="main navigation">
+            <li class="nav__item1"><a href="#intro" class="nav__link1 scrollto" onclick="myFunction()">Home </a></li>
+            <li class="nav__item1"><a href="#about" class="nav__link1 scrollto" onclick="myFunction()">About Us </a>
+            </li>
+            <li class="nav__item1"><a href="#services" class="nav__link1 scrollto" onclick="myFunction()">Clubs </a>
+            </li>
+            <li class="nav__item1"><a href="#glimps" class="nav__link1 scrollto" onclick="myFunction()">Glimpse </a>
+            </li>
+            <li class="nav__item1"><a href="#team" class="nav__link1 scrollto" onclick="myFunction()">Guests </a></li>
+            <li class="nav__item1"><a href="#contact" class="nav__link1 scrollto" onclick="myFunction()">Contact Us </a>
+            </li>
+
+          </ul>
+
+          <!-- MENU TOGGLE BUTTON -->
+          <a href="#nav1" class="nav__toggle1" role="button" aria-expanded="false" aria-controls="menu"
+            onclick="myFunction1()">
+            <svg class="menuicon1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+              <title>Toggle Menu</title>
+              <g>
+                <line class="menuicon__bar1" x1="13" y1="16.5" x2="37" y2="16.5" />
+                <line class="menuicon__bar1" x1="13" y1="24.5" x2="37" y2="24.5" />
+                <line class="menuicon__bar1 red" x1="13" y1="24.5" x2="37" y2="24.5" />
+                <line class="menuicon__bar1" x1="13" y1="32.5" x2="37" y2="32.5" />
+                <circle class="menuicon__circle1 white" r="23" cx="25" cy="25" />
+              </g>
+            </svg>
+          </a>
+
+          <!-- ANIMATED BACKGROUND ELEMENT -->
+          <div class="splash1"></div>
+
+        </nav>
+      </div>
+    </header>
+
+    <section id="intro" class="clearfix">
+      <div class="container">
+        <div class="intro-info">
+          <h1>We Do More<br /><span>Than You Might</span><br />Imagine.</h1>
+          <!-- <div class="intro-link">
               <a href="#about" class="btn-get-started scrollto">About Us</a>
               <a href="#services" class="btn-services scrollto">Clubs</a>
             </div> -->
+        </div>
+        <div class="intro-img">
+          <div class="row">
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="CUrBrain">
+                <img src="img/gk/curbrain.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="RRC">
+                <img src="img/gk/rrc.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="InFocus">
+                <img src="img/gk/infocus.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="Cyber Crusade">
+                <img src="img/gk/cybercrusade.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="CIIC Money Matters">
+                <img src="img/gk/CIIC.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="CIIC Money Matters">
+                <img src="img/gk/CIIC.png" alt="" class="img-fluid" />
+              </a>
+            </div>
           </div>
-          <div class="intro-img">
-            <div class="row">
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="CUrBrain">
-                  <img src="img/gk/curbrain.png" alt="" class="img-fluid" />
-                </a>
-              </div>
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="RRC">
-                  <img src="img/gk/rrc.png" alt="" class="img-fluid" />
-                </a>
-              </div>
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="InFocus">
-                  <img src="img/gk/infocus.png" alt="" class="img-fluid" />
-                </a>
-              </div>
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="Cyber Crusade">
-                  <img src="img/gk/cybercrusade.png" alt="" class="img-fluid" />
-                </a>
-              </div>
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="CIIC Money Matters">
-                  <img src="img/gk/CIIC.png" alt="" class="img-fluid" />
-                </a>
-              </div>
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="CIIC Money Matters">
-                  <img src="img/gk/CIIC.png" alt="" class="img-fluid" />
-                </a>
+          <div class="row">
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="Elavation">
+                <img src="img/gk/Elavation.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="Newron">
+                <img src="img/gk/newron.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="Food for Fun">
+                <img src="img/gk/food for fun.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="Create It/Innovati">
+                <img src="img/gk/createit.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="Geek Designs">
+                <img src="img/gk/designit.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
+              <a href="#services" class="scrollto" data-toggle="tooltip" title="Geek Designs">
+                <img src="img/gk/designit.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 30px">
+            <div class="col-sm-10 center">
+              <h4 class="">
+                Geekonix is the Official <br />Science And Technology Club
+                of<br />
+                Techno Main Salt Lake.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+      <section id="about">
+        <div class="container">
+          <header class="section-header">
+            <h3 style="text-align: center; color: red">About Us</h3>
+            <p style="text-align: center; max-width: 60%; margin: auto">
+              Geekonix is the official science and technology club of Techno
+              Main Salt Lake. It was formed back in 2004-2005 with the sole
+              motive of providing ardent students with opportunities which
+              would enhance their creativity. Its foundation led to the
+              development of a pathway for innovative minds to showcase their
+              competence in various technical fields.
+            </p>
+          </header>
+
+          <div class="row about-extra">
+            <div class="col-lg-6 content order-lg-1 order-2">
+              <div class="col-lg-12 pt-5 pt-lg-0">
+                <h4>Inception</h4>
+                <p style="text-align: center">
+                  Everything began with a Yahoo Group. A common chat forum for
+                  all likeminded people to voice their thoughts. Discussions
+                  ranged from using Linux, making Linux user groups,
+                  exchanging ideas about software and projects. For some, it
+                  all started one day with a seminar organized by the senior
+                  Geekonix members for an introduction to the club which was
+                  trying to make its presence felt outside of the Yahoo group.
+                  <span id="dots1">...</span>
+                  <span id="more1">
+                    Shortly afterward, on Sept’06 a mail was sent with a link
+                    to join the Yahoo group to only 25 people who presumably
+                    turned up and expressed their interest to join the club.
+                    Most of them, if not all, ended up playing really
+                    important roles in the growth of Geekonix and also its
+                    brainchild Edge.
+                  </span>
+                  <button id="myBtn1">Read more</button>
+                </p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="Elavation">
-                  <img src="img/gk/Elavation.png" alt="" class="img-fluid" />
-                </a>
-              </div>
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="Newron">
-                  <img src="img/gk/newron.png" alt="" class="img-fluid" />
-                </a>
-              </div>
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="Food for Fun">
-                  <img src="img/gk/food for fun.png" alt="" class="img-fluid" />
-                </a>
-              </div>
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="Create It/Innovati">
-                  <img src="img/gk/createit.png" alt="" class="img-fluid" />
-                </a>
-              </div>
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="Geek Designs">
-                  <img src="img/gk/designit.png" alt="" class="img-fluid" />
-                </a>
-              </div>
-              <div class="col-6 col-md-4 col-lg-2 hover-zoomin">
-                <a href="#services" class="scrollto" data-toggle="tooltip" title="Geek Designs">
-                  <img src="img/gk/designit.png" alt="" class="img-fluid" />
-                </a>
-              </div>
+
+            <div class="col-lg-6 background order-lg-2 order-1">
+              <img src="img/undraw_Work_chat_re_qes4.svg" class="img-fluid" alt="" />
             </div>
-            <div class="row" style="margin-top: 30px">
-              <div class="col-sm-10 center">
-                <h4 class="">
-                  Geekonix is the Official <br />Science And Technology Club
-                  of<br />
-                  Techno Main Salt Lake.
-                </h4>
-              </div>
+          </div>
+
+          <div class="row about-extra">
+            <div class="col-lg-6">
+              <img src="img/undraw_teacher_35j2.svg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-6 pt-5 pt-lg-0">
+              <h4>Ideation</h4>
+              <p style="text-align: center">
+                As per another of our Geek Alum, something like this led to
+                the establishment of Edge: - One day, Members were called only
+                to talk and ideate in a computer lab, where they first met
+                with some founder members of Geekonix. They all were planning
+                for the first-ever independent Technological Fest of our
+                college. Those guys, along with two girls, started a wall
+                magazine, specifically for science and technology. Later in
+                2005 that became the first-ever tech fest of our college but
+                <span id="dots2">...</span>
+                <span id="more2">
+                  as a part of Anakhronos, our popular and established
+                  cultural fest. The success and popularity prompted the
+                  creation of Edge’07. Later more geeks joined the force, and
+                  our very first website for Edge’07 — Think Beyond, was put
+                  together.
+                </span>
+                <button id="myBtn2">Read more</button>
+              </p>
+            </div>
+          </div>
+
+          <div class="row about-extra">
+            <div class="col-lg-6 order-1 order-lg-2">
+              <img src="img/undraw_Group_chat_re_frmo.svg" class="img-fluid" alt="" />
+            </div>
+
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+              <h4>Execution</h4>
+              <p style="text-align: center">
+                According to our another geek alum it was a very painful time.
+                When the actual planning for the event began— struggling to
+                figure out how to approach companies for sponsorship, how to
+                build a website, how to get a domain name, how to get
+                permission from college — it was quickly realized that a name
+                was needed. A name for the tech-fest, a brand to portray to
+                sponsors. “Edge”, the brainchild of many, started its journey
+                in the year 2007 with the tagline “Think Beyond”. As with any
+                change, Techno India didn’t seem to be quite welcoming about
+                the idea. Edge did not get any official recognition. Yet, the
+                team managed to overcome that by getting sponsors, first of
+                those times when all the fests completely relied on college
+                funds. The fest was held on weekends to not disturb the normal
+                college schedule.
+                <span id="dots3">...</span>
+                <span id="more3">
+                  There was no access to infrastructure, so Edge had to rent
+                  its own server, buy its own domain name (at a time when
+                  getting a credit card was not easy). After overcoming all
+                  hurdles, the first website was launched at edg.co.in. Edge
+                  eventually matured with each iteration. It got better and
+                  grew in popularity as well as fame. Along with the fest, the
+                  team grew, matured and became more confident. But, as they
+                  say, some things never change. Even after 13 iterations, our
+                  spirit to never give up is still the same. Our zeal and
+                  quest to improve our very own EDGE is still there, driving
+                  us to give our best each time.
+                </span>
+                <button id="myBtn3">Read more</button>
+              </p>
+            </div>
+          </div>
+
+          <div class="row about-extra">
+            <div class="col-lg-5">
+              <img src="img/undraw_destinations_fpv7.svg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-7 pt-5 pt-lg-0">
+              <h4>Journey so far</h4>
+              <p style="text-align: center">
+                After being stopped by numerous hurdles and obstacles on their
+                way to eclipsing themselves with each passing year, the team
+                finally launched its first website edg.co.in, which started
+                expanding with each iteration. From just having one event
+                under the banner to organizing 40+ events in a 3-day fest,
+                Edge has only risen above echelons since its inception.
+                Edge'10 first witnessed the most-talked night of the town,
+                Edge Night. Since then, there has been no turning back. We
+                have witnessed famed stand-up comics like Rahul Subhramaniam,
+                The Viral Fever, Sahil Shah, Zakir Khan, Sorabh Pant and many
+                more grace the stage and light up the night. Along with it,
+                Edge Talks brought us famed speakers and celebrities from
+                across the nation in RJ Praveen, Yahya Bootwala and a lot
+                more. The Central Government of India organized a Smart India
+                Hackathon in 2018 in collaboration with Techno India Group and
+                GEEKONIX,by then the established science and technology club
+                of Techno Main Salt lake.
+                <span id="dots">...</span>
+                <span id="more">
+                  This helped the members of the club to gain more exposure
+                  than ever before and it's brainchild Edge to spread its
+                  wings above and beyond. Besides the technical aspect of
+                  reaching greatness, the club also started looking after the
+                  aspects of society from 2016 in its program of EDGE Deeds
+                  where various programs like Walkathon, Orphanage Visit,
+                  Cleanliness Drive, etc are held. The year 2016, the 10th
+                  iteration also saw EDGE become the second-largest Technical
+                  Fest in Eastern India and since then the geek members have
+                  maintained this stature with a footfall of about 7000
+                  students showcasing the best of their talents to take home a
+                  prize money of about 7 lakhs, only rising every year. One of
+                  the most sought-after events of Edge remains to this day,
+                  Cyber Crusade, the gaming paradise. The most recent editions
+                  have witnessed participation from all across the nation
+                  including famed games from national champions of CS: GO and
+                  team members of famed PUBG clans as in Soul and 8Bit.
+                  Lagging no behind has been members of the entrepreneurial
+                  committee of Geekonix who were invited to an international
+                  congregation in Singapore to pitch and discuss their ideas
+                  of a start-up. INDRO, the humanoid robot was present at the
+                  inaugural ceremony of EDGE,19 to grace the initiation of the
+                  three-day event. To sum it up, Geekonix has only seen rise
+                  at a cosmic rate and will only work towards reaching the
+                  zenith.
+                </span>
+                <button id="myBtn">Read more</button>
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <main id="main">
-        <section id="about">
-          <div class="container">
-            <header class="section-header">
-              <h3 style="text-align: center; color: red">About Us</h3>
-              <p style="text-align: center; max-width: 60%; margin: auto">
-                Geekonix is the official science and technology club of Techno
-                Main Salt Lake. It was formed back in 2004-2005 with the sole
-                motive of providing ardent students with opportunities which
-                would enhance their creativity. Its foundation led to the
-                development of a pathway for innovative minds to showcase their
-                competence in various technical fields.
-              </p>
-            </header>
-
-            <div class="row about-extra">
-              <div class="col-lg-6 content order-lg-1 order-2">
-                <div class="col-lg-12 pt-5 pt-lg-0">
-                  <h4>Inception</h4>
-                  <p style="text-align: center">
-                    Everything began with a Yahoo Group. A common chat forum for
-                    all likeminded people to voice their thoughts. Discussions
-                    ranged from using Linux, making Linux user groups,
-                    exchanging ideas about software and projects. For some, it
-                    all started one day with a seminar organized by the senior
-                    Geekonix members for an introduction to the club which was
-                    trying to make its presence felt outside of the Yahoo group.
-                    <span id="dots1">...</span>
-                    <span id="more1">
-                      Shortly afterward, on Sept’06 a mail was sent with a link
-                      to join the Yahoo group to only 25 people who presumably
-                      turned up and expressed their interest to join the club.
-                      Most of them, if not all, ended up playing really
-                      important roles in the growth of Geekonix and also its
-                      brainchild Edge.
-                    </span>
-                    <button id="myBtn1">Read more</button>
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-lg-6 background order-lg-2 order-1">
-                <img
-                  src="img/undraw_Work_chat_re_qes4.svg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="row about-extra">
-              <div class="col-lg-6">
-                <img
-                  src="img/undraw_teacher_35j2.svg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="col-lg-6 pt-5 pt-lg-0">
-                <h4>Ideation</h4>
-                <p style="text-align: center">
-                  As per another of our Geek Alum, something like this led to
-                  the establishment of Edge: - One day, Members were called only
-                  to talk and ideate in a computer lab, where they first met
-                  with some founder members of Geekonix. They all were planning
-                  for the first-ever independent Technological Fest of our
-                  college. Those guys, along with two girls, started a wall
-                  magazine, specifically for science and technology. Later in
-                  2005 that became the first-ever tech fest of our college but
-                  <span id="dots2">...</span>
-                  <span id="more2">
-                    as a part of Anakhronos, our popular and established
-                    cultural fest. The success and popularity prompted the
-                    creation of Edge’07. Later more geeks joined the force, and
-                    our very first website for Edge’07 — Think Beyond, was put
-                    together.
-                  </span>
-                  <button id="myBtn2">Read more</button>
-                </p>
-              </div>
-            </div>
-
-            <div class="row about-extra">
-              <div class="col-lg-6 order-1 order-lg-2">
-                <img
-                  src="img/undraw_Group_chat_re_frmo.svg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-
-              <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
-                <h4>Execution</h4>
-                <p style="text-align: center">
-                  According to our another geek alum it was a very painful time.
-                  When the actual planning for the event began— struggling to
-                  figure out how to approach companies for sponsorship, how to
-                  build a website, how to get a domain name, how to get
-                  permission from college — it was quickly realized that a name
-                  was needed. A name for the tech-fest, a brand to portray to
-                  sponsors. “Edge”, the brainchild of many, started its journey
-                  in the year 2007 with the tagline “Think Beyond”. As with any
-                  change, Techno India didn’t seem to be quite welcoming about
-                  the idea. Edge did not get any official recognition. Yet, the
-                  team managed to overcome that by getting sponsors, first of
-                  those times when all the fests completely relied on college
-                  funds. The fest was held on weekends to not disturb the normal
-                  college schedule.
-                  <span id="dots3">...</span>
-                  <span id="more3">
-                    There was no access to infrastructure, so Edge had to rent
-                    its own server, buy its own domain name (at a time when
-                    getting a credit card was not easy). After overcoming all
-                    hurdles, the first website was launched at edg.co.in. Edge
-                    eventually matured with each iteration. It got better and
-                    grew in popularity as well as fame. Along with the fest, the
-                    team grew, matured and became more confident. But, as they
-                    say, some things never change. Even after 13 iterations, our
-                    spirit to never give up is still the same. Our zeal and
-                    quest to improve our very own EDGE is still there, driving
-                    us to give our best each time.
-                  </span>
-                  <button id="myBtn3">Read more</button>
-                </p>
-              </div>
-            </div>
-
-            <div class="row about-extra">
-              <div class="col-lg-5">
-                <img
-                  src="img/undraw_destinations_fpv7.svg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="col-lg-7 pt-5 pt-lg-0">
-                <h4>Journey so far</h4>
-                <p style="text-align: center">
-                  After being stopped by numerous hurdles and obstacles on their
-                  way to eclipsing themselves with each passing year, the team
-                  finally launched its first website edg.co.in, which started
-                  expanding with each iteration. From just having one event
-                  under the banner to organizing 40+ events in a 3-day fest,
-                  Edge has only risen above echelons since its inception.
-                  Edge'10 first witnessed the most-talked night of the town,
-                  Edge Night. Since then, there has been no turning back. We
-                  have witnessed famed stand-up comics like Rahul Subhramaniam,
-                  The Viral Fever, Sahil Shah, Zakir Khan, Sorabh Pant and many
-                  more grace the stage and light up the night. Along with it,
-                  Edge Talks brought us famed speakers and celebrities from
-                  across the nation in RJ Praveen, Yahya Bootwala and a lot
-                  more. The Central Government of India organized a Smart India
-                  Hackathon in 2018 in collaboration with Techno India Group and
-                  GEEKONIX,by then the established science and technology club
-                  of Techno Main Salt lake.
-                  <span id="dots">...</span>
-                  <span id="more">
-                    This helped the members of the club to gain more exposure
-                    than ever before and it's brainchild Edge to spread its
-                    wings above and beyond. Besides the technical aspect of
-                    reaching greatness, the club also started looking after the
-                    aspects of society from 2016 in its program of EDGE Deeds
-                    where various programs like Walkathon, Orphanage Visit,
-                    Cleanliness Drive, etc are held. The year 2016, the 10th
-                    iteration also saw EDGE become the second-largest Technical
-                    Fest in Eastern India and since then the geek members have
-                    maintained this stature with a footfall of about 7000
-                    students showcasing the best of their talents to take home a
-                    prize money of about 7 lakhs, only rising every year. One of
-                    the most sought-after events of Edge remains to this day,
-                    Cyber Crusade, the gaming paradise. The most recent editions
-                    have witnessed participation from all across the nation
-                    including famed games from national champions of CS: GO and
-                    team members of famed PUBG clans as in Soul and 8Bit.
-                    Lagging no behind has been members of the entrepreneurial
-                    committee of Geekonix who were invited to an international
-                    congregation in Singapore to pitch and discuss their ideas
-                    of a start-up. INDRO, the humanoid robot was present at the
-                    inaugural ceremony of EDGE,19 to grace the initiation of the
-                    three-day event. To sum it up, Geekonix has only seen rise
-                    at a cosmic rate and will only work towards reaching the
-                    zenith.
-                  </span>
-                  <button id="myBtn">Read more</button>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- clubs -->
-        <section id="services" class="section-bg">
-          <div class="container">
-            <header class="section-header">
-              <h3>CLUBS</h3>
-              <!-- <p>
+      <!-- clubs -->
+      <section id="services" class="section-bg">
+        <div class="container">
+          <header class="section-header">
+            <h3>CLUBS</h3>
+            <!-- <p>
                 There are various Clubs under Geekonix which serve various
                 fields.
               </p> -->
-            </header>
+          </header>
 
-            <div class="row">
-              <div
-                class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp"
-                data-wow-duration="1.4s"
-              >
-                <div class="box">
-                  <div class="icon">
-                    <img
-                      src="img/gk/curbrain.png"
-                      alt=""
-                      srcset=""
-                      width="80px"
-                    />
-                  </div>
-                  <h4 class="title">CUrBrain</h4>
-                  <p class="description" style="text-align: center">
-                    The official coding club under geekonix,is for those
-                    students for whom 'coding' is what they live for. The
-                    passionate coders organize and take part in various
-                    innovative coding competitions other than inculcating
-                    interest among others through workshops and seminars all
-                    throughout the year.
-                  </p>
+          <div class="row">
+            <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon">
+                  <img src="img/gk/curbrain.png" alt="" srcset="" width="80px" />
                 </div>
+                <h4 class="title">CUrBrain</h4>
+                <p class="description" style="text-align: center">
+                  The official coding club under geekonix,is for those
+                  students for whom 'coding' is what they live for. The
+                  passionate coders organize and take part in various
+                  innovative coding competitions other than inculcating
+                  interest among others through workshops and seminars all
+                  throughout the year.
+                </p>
               </div>
-              <div
-                class="col-md-6 col-lg-5 wow bounceInUp"
-                data-wow-duration="1.4s"
-              >
-                <div class="box">
-                  <div class="icon">
-                    <img src="img/gk/rrc.png" alt="" srcset="" width="80px" />
-                  </div>
-                  <h4 class="title">RRC (Robopalz Robotics Clubs)</h4>
-                  <p class="description" style="text-align: center">
-                    Robopalz Robotics Club being the official robotics club of
-                    Geekonix, is the club for the robotics enthusiasts. For the
-                    ones who can showcase and compete with the aggregate of
-                    their knowledge of artificial intelligence, mechanical
-                    savvy, and algorithmic virtuosity.
-                  </p>
+            </div>
+            <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon">
+                  <img src="img/gk/rrc.png" alt="" srcset="" width="80px" />
                 </div>
+                <h4 class="title">RRC (Robopalz Robotics Clubs)</h4>
+                <p class="description" style="text-align: center">
+                  Robopalz Robotics Club being the official robotics club of
+                  Geekonix, is the club for the robotics enthusiasts. For the
+                  ones who can showcase and compete with the aggregate of
+                  their knowledge of artificial intelligence, mechanical
+                  savvy, and algorithmic virtuosity.
+                </p>
               </div>
+            </div>
 
-              <div
-                class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp"
-                data-wow-delay="0.1s"
-                data-wow-duration="1.4s"
-              >
-                <div class="box">
-                  <div class="icon">
-                    <img
-                      src="img/gk/infocus.png"
-                      alt=""
-                      srcset=""
-                      width="80px"
-                    />
-                  </div>
-                  <h4 class="title">InFocus</h4>
-                  <p class="description" style="text-align: center">
-                    With an aim to bring together all the photography
-                    enthusiasts, this club was founded under Geekonix. Infocus
-                    aims to promote the aesthetic art of photography and help
-                    develop associated skills through workshops and events
-                  </p>
+            <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon">
+                  <img src="img/gk/infocus.png" alt="" srcset="" width="80px" />
                 </div>
+                <h4 class="title">InFocus</h4>
+                <p class="description" style="text-align: center">
+                  With an aim to bring together all the photography
+                  enthusiasts, this club was founded under Geekonix. Infocus
+                  aims to promote the aesthetic art of photography and help
+                  develop associated skills through workshops and events
+                </p>
               </div>
-              <div
-                class="col-md-6 col-lg-5 wow bounceInUp"
-                data-wow-delay="0.1s"
-                data-wow-duration="1.4s"
-              >
-                <div class="box">
-                  <div class="icon">
-                    <img
-                      src="img/gk/cybercrusade.png"
-                      alt=""
-                      srcset=""
-                      width="80px"
-                    />
-                  </div>
-                  <h4 class="title">Cyber Crusade</h4>
-                  <p class="description" style="text-align: center">
-                    This club was founded by and for those gamers for whom
-                    gaming is not just a hobby, but also a passion and a field
-                    to excel in. Hosting a plethora of events every year, Cyber
-                    Crusade,the official gaming club of Geekonix, aims to
-                    promote the spirit of healthy competition and dedication in
-                    all fellow students
-                  </p>
+            </div>
+            <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon">
+                  <img src="img/gk/cybercrusade.png" alt="" srcset="" width="80px" />
                 </div>
+                <h4 class="title">Cyber Crusade</h4>
+                <p class="description" style="text-align: center">
+                  This club was founded by and for those gamers for whom
+                  gaming is not just a hobby, but also a passion and a field
+                  to excel in. Hosting a plethora of events every year, Cyber
+                  Crusade,the official gaming club of Geekonix, aims to
+                  promote the spirit of healthy competition and dedication in
+                  all fellow students
+                </p>
               </div>
+            </div>
 
-              <div
-                class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp"
-                data-wow-delay="0.2s"
-                data-wow-duration="1.4s"
-              >
-                <div class="box">
-                  <div class="icon">
-                    <img src="img/gk/CIIC.png" alt="" srcset="" width="80px" />
-                  </div>
-                  <h4 class="title">CIIC Money Matters</h4>
-                  <p class="description" style="text-align: center">
-                    CIIC is the innovation cell of Geekonix that aims to promote
-                    entrepreneurial activities among the students through a
-                    variety of events. This club provides a wonderful platform
-                    for the budding entrepreneurs who emanate creative and
-                    innovative perspectives to change the market scenario.
+            <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon">
+                  <img src="img/gk/CIIC.png" alt="" srcset="" width="80px" />
+                </div>
+                <h4 class="title">CIIC Money Matters</h4>
+                <p class="description" style="text-align: center">
+                  CIIC is the innovation cell of Geekonix that aims to promote
+                  entrepreneurial activities among the students through a
+                  variety of events. This club provides a wonderful platform
+                  for the budding entrepreneurs who emanate creative and
+                  innovative perspectives to change the market scenario.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon">
+                  <img src="img/gk/Elavation.png" alt="" srcset="" width="80px" />
+                </div>
+                <h4 class="title">Elevation</h4>
+                <p class="description" style="text-align: center">
+                  Elevation ,the official community of Bridge designing of
+                  Geekonix,aims at using the analytical acumen and
+                  problem-solving skills of engineers to shape up the
+                  elevation of a building using CAD software or to build
+                  simple model designs of a bridge.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon">
+                  <img src="img/gk/newron.png" alt="" srcset="" width="80px" />
+                </div>
+                <h4 class="title">Newron</h4>
+                <p class="description" style="text-align: center">
+                  Charge your nerves, think differently to outshine the crowd.
+                  Newron, the official Quiz, Debate, and Electronics club of
+                  Geekonix believes that every person has an aura in them, an
+                  aura of potential, of ideas and world-changing solutions. It
+                  is in this potential and ideas this club aims to tap and
+                  present to the masses.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon">
+                  <img src="img/gk/food for fun.png" alt="" srcset="" width="80px" />
+                </div>
+                <h4 class="title">Food for Fun</h4>
+                <p class="description" style="text-align: center">
+                  As the name suggests this club brings out the essence of
+                  food, the creative use of technology in making it and
+                  involves a lot of fun and frolic. Food for Fun,the club
+                  under Geekonix related to food processing and technology,
+                  offers firsthand knowledge about the various
+                  industry-related problems and helps students to come up with
+                  innovative and sustainable solutions.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon">
+                  <img src="img/gk/createit.png" alt="" srcset="" width="80px" />
+                </div>
+                <h4 class="title">Create It/Innovati</h4>
+                <p class="description" style="text-align: center">
+                  If wit and intellect combined with creativity and wishful
+                  thinking is your forte, then this club is for you. This club
+                  of Geekonix promotes the act of turning new and imaginative
+                  ideas into reality while building a strong foundation of
+                  scientific knowledge and technology
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon">
+                  <img src="img/gk/designit.png" alt="" srcset="" width="80px" />
+                </div>
+                <h4 class="title">Geek Design</h4>
+                <p class="description" style=" text-align: center; margin-bottom: 80px; ">
+                  A newly found club under geekonix which aims at finding out
+                  the creative minds to create picturesque posters or to use
+                  their animative skills to dive into the world of motion
+                  graphics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- clubs end -->
+      <!-- What we do -->
+      <section id="why-us" class="wow fadeIn">
+        <div class="container">
+          <header class="section-header">
+            <h3 style="text-align: center; font-size: 3rem">What We do?</h3>
+          </header>
+
+          <div class="row row-eq-height justify-content-center">
+            <div class="col-lg-4 mb-4">
+              <div class="card wow bounceInUp">
+                <i class="far fa-gem"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Workshops, Seminars and Talks</h5>
+                  <p class="card-text">
+                    Geekonix conducts Technical workshops related to robotic,
+                    coding, Photography etc frequently in the college
+                    campus,Seminars realted to higher studies and talks with
+                    various personalities.
                   </p>
                 </div>
               </div>
-              <div
-                class="col-md-6 col-lg-5 wow bounceInUp"
-                data-wow-delay="0.2s"
-                data-wow-duration="1.4s"
-              >
-                <div class="box">
-                  <div class="icon">
-                    <img
-                      src="img/gk/Elavation.png"
-                      alt=""
-                      srcset=""
-                      width="80px"
-                    />
-                  </div>
-                  <h4 class="title">Elevation</h4>
-                  <p class="description" style="text-align: center">
-                    Elevation ,the official community of Bridge designing of
-                    Geekonix,aims at using the analytical acumen and
-                    problem-solving skills of engineers to shape up the
-                    elevation of a building using CAD software or to build
-                    simple model designs of a bridge.
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="card wow bounceInUp">
+                <i class="fa fa-language"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Tech Events</h5>
+                  <p class="card-text">
+                    Edge - Brain child of geekonix, East-India's second
+                    Largest fest is organized by geekonix with 48+ events and
+                    prize in lakhs all in cash.Geekonix also Organize pre Edge
+                    event i.e Intra college fest for the Techno Main salt lake
+                    students only.
                   </p>
                 </div>
               </div>
-              <div
-                class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp"
-                data-wow-delay="0.2s"
-                data-wow-duration="1.4s"
-              >
-                <div class="box">
-                  <div class="icon">
-                    <img
-                      src="img/gk/newron.png"
-                      alt=""
-                      srcset=""
-                      width="80px"
-                    />
-                  </div>
-                  <h4 class="title">Newron</h4>
-                  <p class="description" style="text-align: center">  
-                    Charge your nerves, think differently to outshine the crowd.
-                    Newron, the official Quiz, Debate, and Electronics club of
-                    Geekonix believes that every person has an aura in them, an
-                    aura of potential, of ideas and world-changing solutions. It
-                    is in this potential and ideas this club aims to tap and
-                    present to the masses.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="col-md-6 col-lg-5 wow bounceInUp"
-                data-wow-delay="0.2s"
-                data-wow-duration="1.4s"
-              >
-                <div class="box">
-                  <div class="icon">
-                    <img
-                      src="img/gk/food for fun.png"
-                      alt=""
-                      srcset=""
-                      width="80px"
-                    />
-                  </div>
-                  <h4 class="title">Food for Fun</h4>
-                  <p class="description" style="text-align: center">
-                    As the name suggests this club brings out the essence of
-                    food, the creative use of technology in making it and
-                    involves a lot of fun and frolic. Food for Fun,the club
-                    under Geekonix related to food processing and technology,
-                    offers firsthand knowledge about the various
-                    industry-related problems and helps students to come up with
-                    innovative and sustainable solutions.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp"
-                data-wow-delay="0.2s"
-                data-wow-duration="1.4s"
-              >
-                <div class="box">
-                  <div class="icon">
-                    <img
-                      src="img/gk/createit.png"
-                      alt=""
-                      srcset=""
-                      width="80px"
-                    />
-                  </div>
-                  <h4 class="title">Create It/Innovati</h4>
-                  <p class="description" style="text-align: center">
-                    If wit and intellect combined with creativity and wishful
-                    thinking is your forte, then this club is for you. This club
-                    of Geekonix promotes the act of turning new and imaginative
-                    ideas into reality while building a strong foundation of
-                    scientific knowledge and technology
-                  </p>
-                </div>
-              </div>
-              <div
-                class="col-md-6 col-lg-5 wow bounceInUp"
-                data-wow-delay="0.2s"
-                data-wow-duration="1.4s"
-              >
-                <div class="box">
-                  <div class="icon">
-                    <img
-                      src="img/gk/designit.png"
-                      alt=""
-                      srcset=""
-                      width="80px"
-                    />
-                  </div>
-                  <h4 class="title">Geek Design</h4>
-                  <p class="description" style=" text-align: center; margin-bottom: 80px; ">
-                    A newly found club under geekonix which aims at finding out
-                    the creative minds to create picturesque posters or to use
-                    their animative skills to dive into the world of motion
-                    graphics.
-                  </p>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="card wow bounceInUp">
+                <i class="fa fa-object-group"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Fun Events</h5>
+                  <p class="card-text"></p>
+                  EDGE has hosted a ton of Fun events during Edge like Paint
+                  Ball / Laser Tag, Red Bull Pong , Body Zorbing, TikTok
+                  Event, selfie competitions Etc during Edge and Intra Events.
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- clubs end -->
-        <!-- What we do -->
-        <section id="why-us" class="wow fadeIn">
-          <div class="container">
-            <header class="section-header">
-              <h3 style="text-align: center; font-size: 3rem">What We do?</h3>
-            </header>
 
-            <div class="row row-eq-height justify-content-center">
-              <div class="col-lg-4 mb-4">
-                <div class="card wow bounceInUp">
-                  <i class="far fa-gem"></i>
-                  <div class="card-body">
-                    <h5 class="card-title">Workshops, Seminars and Talks</h5>
-                    <p class="card-text">
-                      Geekonix conducts Technical workshops related to robotic,
-                      coding, Photography etc frequently in the college
-                      campus,Seminars realted to higher studies and talks with
-                      various personalities.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 mb-4">
-                <div class="card wow bounceInUp">
-                  <i class="fa fa-language"></i>
-                  <div class="card-body">
-                    <h5 class="card-title">Tech Events</h5>
-                    <p class="card-text">
-                      Edge - Brain child of geekonix, East-India's second
-                      Largest fest is organized by geekonix with 48+ events and
-                      prize in lakhs all in cash.Geekonix also Organize pre Edge
-                      event i.e Intra college fest for the Techno Main salt lake
-                      students only.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 mb-4">
-                <div class="card wow bounceInUp">
-                  <i class="fa fa-object-group"></i>
-                  <div class="card-body">
-                    <h5 class="card-title">Fun Events</h5>
-                    <p class="card-text"></p>
-                    EDGE has hosted a ton of Fun events during Edge like Paint
-                    Ball / Laser Tag, Red Bull Pong , Body Zorbing, TikTok
-                    Event, selfie competitions Etc during Edge and Intra Events.
-                  </div>
-                </div>
-              </div>
+          <div class="row counters">
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">450</span><span style="display: inline !important">+</span>
+              <p>Workshops</p>
             </div>
 
-            <div class="row counters">
-              <div class="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">450</span
-                ><span style="display: inline !important">+</span>
-                <p>Workshops</p>
-              </div>
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">14</span>
+              <p>Edge Iterations</p>
+            </div>
 
-              <div class="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">14</span>
-                <p>Edge Iterations</p>
-              </div>
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">300</span><span style="display: inline">+</span>
+              <p>Members</p>
+            </div>
 
-              <div class="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">300</span
-                ><span style="display: inline">+</span>
-                <p>Members</p>
-              </div>
-
-              <div class="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">900</span
-                ><span style="display: inline">k+</span>
-                <p>Prizes</p>
-              </div>
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">900</span><span style="display: inline">k+</span>
+              <p>Prizes</p>
             </div>
           </div>
-        </section>
-        <!--What we do end  -->
+        </div>
+      </section>
+      <!--What we do end  -->
 
-        <!-- Glimps -->
-        <section id="glimps" class="clearfix">
-          <div class="container">
-    
-            <header class="section-header">
-              <h3 
-              class="section-title" 
-              style="
+      <!-- Glimps -->
+      <section id="glimps" class="clearfix">
+        <div class="container">
+
+          <header class="section-header">
+            <h3 class="section-title" style="
               text-align: center; 
               color: red; 
               font-size: 3rem;
@@ -733,219 +631,235 @@
               ">
               GLIMPSE
             </h3>
-            </header>
-    
-            <div class="row">
-              <div class="col-lg-12">
-                <ul id="portfolio-flters">
-                  <li class="list active" data-filter="all">All</li>
-                  <li class="list" data-filter="filter-app">Workshops</li>
-                  <li class="list" data-filter="filter-card">Events</li>
-                  <li class="list" data-filter="filter-web">Social cause</li>
-                </ul>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <ul id="portfolio-flters">
+                <li class="list active" data-filter="all">All</li>
+                <li class="list" data-filter="filter-app">Workshops</li>
+                <li class="list" data-filter="filter-card">Events</li>
+                <li class="list" data-filter="filter-web">Social cause</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/app1.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/app1.jpeg" data-lightbox="mygallery" data-title="App 1" class="link-preview"
+                      title="Preview">
+                      <i class="ion ion-android-open"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
-    
-            <div class="row portfolio-container">
-    
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/app1.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/app1.jpeg" data-lightbox="mygallery" data-title="App 1" class="link-preview" title="Preview">
-                        <i class="ion ion-android-open"></i></a>
-                    </div>
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="new_img/event1.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="new_img/event1.jpeg" class="link-preview" data-lightbox="mygallery" data-title="App 2"
+                      title="Preview"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-    
-            
-    
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-                <div class="portfolio-wrap">
-                  <img src="new_img/event1.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                   <div>
-                      <a href="new_img/event1.jpeg" class="link-preview" data-lightbox="mygallery" data-title="App 2" title="Preview"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/app2.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/app2.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s"
+                      title="More Details"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/app2.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/app2.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/web2.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/web2.jpeg" class="link-preview" data-lightbox="mygallery" data-title="Web 2"
+                      title="Preview"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/web2.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/web2.jpeg" class="link-preview" data-lightbox="mygallery" data-title="Web 2" title="Preview"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/card3.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/card3.jpeg" class="link-preview" data-lightbox="mygallery" data-title="App 3"
+                      title="Preview"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/card3.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/card3.jpeg" class="link-preview" data-lightbox="mygallery" data-title="App 3" title="Preview"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/card4.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/card4.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s"
+                      title="More Details"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/card4.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/card4.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <img src="new_img/cyber.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="new_img/cyber.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s"
+                      title="More Details"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-                <div class="portfolio-wrap">
-                  <img src="new_img/cyber.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="new_img/cyber.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/card7.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/card7.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s"
+                      title="More Details"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/card7.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/card7.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/card8.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/card8.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s"
+                      title="More Details"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/card8.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/card8.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/app5.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/app5.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s"
+                      title="More Details"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/app5.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/app5.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/web1.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/web1.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s"
+                      title="More Details"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/web1.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/web1.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/app4.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/app4.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s"
+                      title="More Details"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/app4.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/app4.jpeg" class="link-preview" data-lightbox="mygallery" data-title="s" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/web1.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/web1.jpeg" class="link-preview" data-lightbox="mygallery" data-title="Web 1"
+                      title="Preview"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/web1.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/web1.jpeg" class="link-preview" data-lightbox="mygallery" data-title="Web 1" title="Preview"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/app4.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/app4.jpeg" data-lightbox="mygallery" data-title="App 1" class="link-preview"
+                      title="Preview"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/app4.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/app4.jpeg" data-lightbox="mygallery" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-android-open"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img src="img/portfolio/app5.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <div>
-                      <a href="img/portfolio/app5.jpeg" data-lightbox="mygallery" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-android-open"></i></a>
-                    </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/app5.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div>
+                    <a href="img/portfolio/app5.jpeg" data-lightbox="mygallery" data-title="App 1" class="link-preview"
+                      title="Preview"><i class="ion ion-android-open"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- Glimps end -->
+        </div>
+      </section>
+      <!-- Glimps end -->
 
-        <!-- guest section -->
-        <section id="team">
-          <div class="container">
-            <div class="column revolving">
-              <div class="col-xs-6">
-                <div class="container">
-                  <div class="texts">
-                    <h3>Some Visted Guests</h3>
-                    <!-- <p class="p1">Some of the popular faces who visited our college in the events conducted by Team Geekonix</p> -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-6">
-                <div class="guests">
-                    <div class="box">
-                      <span style="--i:1;"><img src="new_img/karunesh.jpeg" width="100" height="170"></span>
-                      <span style="--i:2;"><img src="new_img/Anand_kumar.jpeg" width="100" height="170"></span>
-                      <span style="--i:3;"><img src="new_img/Ksrtik.jpeg" width="100" height="170"></span>
-                      <span style="--i:4;"><img src="new_img/rahul_subramaniam.jpeg" width="100" height="170"></span>
-                      <span style="--i:5;"><img src="new_img/yahyah.jpeg" width="100" height="170"></span>
-                      <span style="--i:6;"><img src="new_img/Late_soumitra_chattopadhyay.jpeg" width="100" height="170"></span>
-                      <span style="--i:7;"><img src="new_img/vineeth.jpeg" width="100" height="170"></span>
-                      <span style="--i:8;"><img src="new_img/sahil.jpeg" width="100" height="170"></span>
-                      <span style="--i:9;"><img src="img/team_5.jpg" width="100" height="170"></span>
-                    </div>
+      <!-- guest section -->
+      <section id="team">
+        <div class="container">
+          <div class="column revolving">
+            <div class="col-xs-6">
+              <div class="container">
+                <div class="texts">
+                  <h3>Some Visted Guests</h3>
+                  <!-- <p class="p1">Some of the popular faces who visited our college in the events conducted by Team Geekonix</p> -->
                 </div>
               </div>
             </div>
+            <div class="col-xs-6">
+              <div class="guests">
+                <div class="box">
+                  <span style="--i:1;"><img src="new_img/karunesh.jpeg" width="100" height="170"></span>
+                  <span style="--i:2;"><img src="new_img/Anand_kumar.jpeg" width="100" height="170"></span>
+                  <span style="--i:3;"><img src="new_img/Ksrtik.jpeg" width="100" height="170"></span>
+                  <span style="--i:4;"><img src="new_img/rahul_subramaniam.jpeg" width="100" height="170"></span>
+                  <span style="--i:5;"><img src="new_img/yahyah.jpeg" width="100" height="170"></span>
+                  <span style="--i:6;"><img src="new_img/Late_soumitra_chattopadhyay.jpeg" width="100"
+                      height="170"></span>
+                  <span style="--i:7;"><img src="new_img/vineeth.jpeg" width="100" height="170"></span>
+                  <span style="--i:8;"><img src="new_img/sahil.jpeg" width="100" height="170"></span>
+                  <span style="--i:9;"><img src="img/team_5.jpg" width="100" height="170"></span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <!--    <div class="second-row">
+          <!--    <div class="second-row">
               <div class="container">
                 <div class="row">
                   <div class="box2 col-lg-4 col-md-6 hover-zoomin">
@@ -1051,167 +965,165 @@
               </div>
               </div>
           </div> -->
-        </section>
+      </section>
 
-        <!-- Contact Us Section -->
-        <section id="contact">
-          <div class="container-fluid">
-    
-            <div class="section-header">
-              <h3 style="text-align: center; color: red; font-weight: 600;">Contact Us</h3>
-            </div>
-    
-            <div class="row wow fadeInUp contact-body">
-              <div class="details">
-                <div class="form">
-                  <div id="sendmessage">Your message has been sent. Thank you!</div>
-                  <div id="errormessage"></div>
-                  <form action="" method="post" role="form" class="contactForm">
-                    <div>
-                      <div class="form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                        <div class="validation"></div>
-                      </div>
-                      <br/>
-                      <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                        <div class="validation"></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                      <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                      <div class="validation"></div>
-                    </div>
-                    <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-                  </form>
-                </div>
-              </div>
+      <!-- Contact Us Section -->
+      <section id="contact">
+        <div class="container-fluid">
 
-              <div class="map-view">
-                <div class="row map-details">
-                  <div class="col-md-3 info">
-                    <i class="ion-ios-location-outline"></i>
-                    <p>EM-4 . Salt Lake City
-                      Kolkata <br />
-                West Bengal . 700091
-                    </p>
-                  </div>
-                  <div class="col-md-3 info">
-                    <i class="ion-ios-email-outline"></i>
-                    <p>geekonix@gmail.com</p>
-                  </div>
-                  <div class="col-md-3 info">
-                    <i class="ion-ios-telephone-outline"></i>
-                    <p>+917602760944
-                      +918910058636</p>
-                  </div>
-                </div>
-                <div class="map mb-4 mb-lg-0">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14737.212354101763!2d88.41090428001121!3d22.56776476296268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275b086df5d53%3A0x8d5e0a9a01e6ed75!2sTechno+India+Group!5e0!3m2!1sen!2sin!4v1561723374845!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
-                </div>
-              </div>
-    
-            </div>
-    
+          <div class="section-header">
+            <h3 style="text-align: center; color: red; font-weight: 600;">Contact Us</h3>
           </div>
-        </section>
-        </div>
 
-      </main>
+          <div class="row wow fadeInUp contact-body">
+            <div class="details">
+              <div class="form">
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+                <form action="" method="post" role="form" class="contactForm">
+                  <div>
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                        data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <div class="validation"></div>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                        data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                      data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                      data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                  <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                </form>
+              </div>
+            </div>
+
+            <div class="map-view">
+              <div class="row map-details">
+                <div class="col-md-3 info">
+                  <i class="ion-ios-location-outline"></i>
+                  <p>EM-4 . Salt Lake City
+                    Kolkata <br />
+                    West Bengal . 700091
+                  </p>
+                </div>
+                <div class="col-md-3 info">
+                  <i class="ion-ios-email-outline"></i>
+                  <p>geekonix@gmail.com</p>
+                </div>
+                <div class="col-md-3 info">
+                  <i class="ion-ios-telephone-outline"></i>
+                  <p>+917602760944
+                    +918910058636</p>
+                </div>
+              </div>
+              <div class="map mb-4 mb-lg-0">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14737.212354101763!2d88.41090428001121!3d22.56776476296268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275b086df5d53%3A0x8d5e0a9a01e6ed75!2sTechno+India+Group!5e0!3m2!1sen!2sin!4v1561723374845!5m2!1sen!2sin"
+                  frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+  </div>
+
+  </main>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="sec aboutus">
+        <h2>About Geekonix</h2>
+        <p>
+          Geekonix is the official science and technology society of Techno
+          Main, Salt Lake.
+        </p>
+        <ul class="sci" id="">
+          <li>
+            <a href="https://www.facebook.com/geekonix/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/geekonix"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCSwFemGqe1XRmVlg1jRNJYw"><i class="fab fa-youtube"
+                aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2>Geek Alumni</h2>
+        <p>
+          If you are a Geekonix Alumni and again want to get in touch with
+          everyone. Just join us
+          <a href="https://groups.google.com/forum/#!forum/edge-geekalums" style="color: red;">Here</a>
+        </p>
+      </div>
+      <div class="sec contact">
+        <h2>Contact Info</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa fa-map-marker" aria-hidden="true" style="color: white"></i></span>
+            <br />
+            <span style="color: red;">EM-4. Salt Lake City<br />
+              Sector V . Kolkata <br />
+              West Bengal . 700091 <br /></span>
+          </li>
+          <li>
+            <span style="color: white"><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <p>
+              <a href="tel:7602760944" style="color: red;">+917602760944</a><br />
+              <a href="tel:8910058636" style="color: red;">+918910058636</a>
+            </p>
+          </li>
+          <li>
+            <span><i class="fa fa-envelope" aria-hidden="true" style="color: white"></i></span>
+            <p><a href="mailto:geekonix@gmail.com" style="color: red;">geekonix@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="sec aboutus">
-          <h2>About Geekonix</h2>
-          <p>
-            Geekonix is the official science and technology society of Techno
-            Main, Salt Lake.
-          </p>
-          <ul class="sci" id="">
-            <li>
-              <a href="https://www.facebook.com/geekonix/"
-                ><i class="fab fa-facebook" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/geekonix"
-                ><i class="fab fa-instagram" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UCSwFemGqe1XRmVlg1jRNJYw"
-                ><i class="fab fa-youtube" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="sec quicklinks">
-          <h2>Geek Alumni</h2>
-          <p>
-            If you are a Geekonix Alumni and again want to get in touch with
-            everyone. Just join us
-            <a href="https://groups.google.com/forum/#!forum/edge-geekalums"
-            style="color: red;">Here</a
-            >
-          </p>
-        </div>
-        <div class="sec contact">
-          <h2>Contact Info</h2>
-          <ul class="info">
-            <li>
-              <span><i class="fa fa-map-marker" aria-hidden="true" style="color: white"></i></span>
-              <br/>
-              <span style="color: red;"
-                >EM-4. Salt Lake City<br />
-                Sector V . Kolkata <br />
-                West Bengal . 700091 <br
-              /></span>
-            </li>
-            <li>
-              <span style="color: white"><i class="fa fa-phone" aria-hidden="true"></i></span>
-              <p >
-                <a href="tel:7602760944" style="color: red;">+917602760944</a><br />
-                <a href="tel:8910058636" style="color: red;">+918910058636</a>
-              </p>
-            </li>
-            <li>
-              <span><i class="fa fa-envelope" aria-hidden="true" style="color: white"></i></span>
-              <p><a href="mailto:geekonix@gmail.com" style="color: red;">geekonix@gmail.com</a></p>
-            </li>
-          </ul>
-        </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Geekonix</strong>. All Rights Reserved.
       </div>
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong>Geekonix</strong>. All Rights Reserved.
-        </div>
-        <div class="credits">
-        </div>
+      <div class="credits">
       </div>
-    </footer>
-    <!-- Footer end -->
-    <a href="#" class="back-to-top"><img src="img/up-arrow.svg"/></a>
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <!-- <script src="lib/mobile-nav/mobile-nav.js"></script> -->
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  <a href="#" class="back-to-top"><img src="img/up-arrow.svg" /></a>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <!-- <script src="lib/mobile-nav/mobile-nav.js"></script> -->
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
 
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
