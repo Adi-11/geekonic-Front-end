@@ -141,7 +141,7 @@
           .hide("1000");
         $("#glimps .carousel-cell")
           .filter("." + value)
-          .show("1000")
+          .show("1000");
       }
     });
     //add active class on selected
@@ -157,33 +157,37 @@
   });
 })(jQuery);
 
-var img = document.querySelectorAll("#glimps .carousel img");
+// previous carousel
 
-function glimpses(imgs) {
-  var carousel = document.querySelector("#glimps .carousel");
-  var flkty = new Flickity(carousel, {
-    groupCells: true,
-    wrapAround: true,
-    fade: true,
-    dragThreshold: 100,
-  });
+// var img = document.querySelectorAll("#glimps .carousel img");
 
-  // var imgs = carousel.querySelectorAll("img");
-  var hasClassName = document.querySelector("#glimps .carousel-cell");
-  // get transform property
-  var docStyle = document.documentElement.style;
-  var transformProp =
-    typeof docStyle.transform == "string" ? "transform" : "WebkitTransform";
+// function glimpses(imgs) {
+//   var carousel = document.querySelector("#glimps .carousel");
+//   var flkty = new Flickity(carousel, {
+//     groupCells: true,
+//     wrapAround: true,
+//     fade: true,
+//     dragThreshold: 100,
+//   });
 
-  flkty.on("scroll", function () {
-    flkty.slides.forEach(function (slide, i) {
-      var img = imgs[i];
-      var x = ((slide.target + flkty.x) * -1) / 3;
-      img.style[transformProp] = "translateX(" + x + "px)";
-    });
-  });
-}
-glimpses(img);
+//   // var imgs = carousel.querySelectorAll("img");
+//   var hasClassName = document.querySelector("#glimps .carousel-cell");
+//   // get transform property
+//   var docStyle = document.documentElement.style;
+//   var transformProp =
+//     typeof docStyle.transform == "string" ? "transform" : "WebkitTransform";
+
+//   flkty.on("scroll", function () {
+//     flkty.slides.forEach(function (slide, i) {
+//       var img = imgs[i];
+//       var x = ((slide.target + flkty.x) * -1) / 3;
+//       img.style[transformProp] = "translateX(" + x + "px)";
+//     });
+//   });
+// }
+// glimpses(img);
+
+// previous carousel
 
 const dots = document.getElementById("dots");
 const moreText = document.getElementById("more");
@@ -305,4 +309,35 @@ $(window).scroll(function () {
   } else {
     $("#team .box").css({ display: "none" });
   }
+});
+
+// const btn = document.querySelector("#all");
+
+// btn.addEventListener("click", () => {
+//   document.querySelector("#put").innerHTML =
+//     '<object  type="text/html" data="./clubfilter/background-slider/index.html" style="height: 100vh"></object>';
+// });
+
+var owl = $("#glimps .owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 5,
+    },
+  },
+});
+
+$("#glimps .owl-filter-bar").on("click", ".item", function () {
+  var $item = $(this);
+  var filter = $item.data("owl-filter");
+
+  owl.owlcarousel2_filter(filter);
 });

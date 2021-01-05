@@ -63,7 +63,7 @@
                   alt=""
                   class="img-fluid"
                 />
-                <span><span style="color: red">G</span>ee<span style="color: red;">koni</span>x</span>
+                <span><span style="color:#d00b02">G</span>ee<span style="color:#d00b02;">koni</span>x</span>
               </a>
             </h1>
           </div>
@@ -594,17 +594,15 @@
             </header>
             <!-- carousel -->
             <div class="row">
-              <div class="col-lg-12">
-                <ul id="portfolio-flters">
-                  <li class="list active" data-filter="all">All</li>
-                  <li class="list" data-filter="filter-app">Workshops</li>
-                  <li class="list" data-filter="filter-card">Events</li>
-                  <li class="list" data-filter="filter-web">Social cause</li>
-                </ul>
+              <div class="col-lg-12 owl-filter-bar" id="owl">
+                  <a class="item" data-owl-filter="*">All</a>
+                  <a class="item" data-owl-filter=".filter-app">Workshops</a>
+                  <a class="item" data-owl-filter=".filter-card">Events</a>
+                  <a class="item" data-owl-filter=".filter-web">Social cause</a>
               </div>
             </div>
-            <div class="carousel">
-                <div class="carousel-cell filter-app">
+            <div class="owl-carousel owl-theme">
+                <div class="item filter-app">
                   <img src="img/portfolio/app1.jpeg" class="filter-app1" alt="">
                   <div class="portfolio-info">
                     <div>
@@ -613,7 +611,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-cell filter-app">
+                <div class="item filter-app">
                   <img src="new_img/event1.jpeg" class="filter-app1" alt="">
                   <div class="portfolio-info">
                    <div>
@@ -622,7 +620,7 @@
                   </div>
                 </div>
     
-                <div class="carousel-cell filter-card">
+                <div class="item filter-card">
                   <img src="img/portfolio/app2.jpeg" class="filter-card1" alt="">
                   <div class="portfolio-info">
                     <div>
@@ -631,7 +629,7 @@
                   </div>
                 </div>
     
-                <div class="carousel-cell filter-web">
+                <div class="item filter-web">
                   <img src="img/portfolio/web2.jpeg" class="filter-web1" alt="">
                   <div class="portfolio-info">
                     <div>
@@ -640,7 +638,7 @@
                   </div>
                 </div>
     
-                <div class="carousel-cell filter-app">
+                <div class="item filter-app">
                   <img src="img/portfolio/card3.jpeg" class="filter-app1" alt="">
                   <div class="portfolio-info">
                     <div>
@@ -649,7 +647,7 @@
                   </div>
                 </div>
     
-                <div class="carousel-cell filter-card">
+                <div class="item filter-card">
                   <img src="img/portfolio/card4.jpeg" class="filter-card1" alt="">
                   <div class="portfolio-info">
                     <div>
@@ -658,7 +656,7 @@
                   </div>
                 </div>
     
-                <div class="carousel-cell filter-card">
+                <div class="item filter-card">
                   <img src="new_img/cyber.jpeg" class="filter-card1" alt="">
                   <div class="portfolio-info">
                     <div>
@@ -667,7 +665,7 @@
                   </div>
                 </div>
     
-                <div class="carousel-cell filter-card">
+                <div class="item filter-card">
                   <img src="img/portfolio/card7.jpeg" class="filter-card1" alt="">
                   <div class="portfolio-info">
                     <div>
@@ -675,7 +673,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-cell filter-card">
+                <div class="item filter-card">
                   <img src="img/portfolio/card8.jpeg" class="filter-card1" alt="">
                   <div class="portfolio-info">
                     <div>
@@ -683,7 +681,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-cell filter-card">
+                <div class="item filter-card">
                   <img src="img/portfolio/app5.jpeg" class="filter-card1" alt="">
                   <div class="portfolio-info">
                     <div>
@@ -691,7 +689,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-cell filter-card">
+                <div class="item filter-card">
                   <img src="img/portfolio/web1.jpeg" class="filter-card1" alt="">
                   <div class="portfolio-info">
                     <div>
@@ -699,7 +697,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-cell filter-card">
+                <div class="item filter-card">
                   <img src="img/portfolio/app4.jpeg" class="filter-card1" alt="">
                   <div class="portfolio-info">
                     <div>
@@ -1030,7 +1028,8 @@
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>
     <!-- Required jQuery & OwlCarousel 2                     -->
-
+    <script src="jquery.js"></script> 
+    <script src="owl.carousel.js"></script>
 <!-- OwlCarousel 2 - Filter -->
     <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
 
