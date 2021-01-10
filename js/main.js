@@ -126,7 +126,7 @@
         nav: true,
       },
       1000: {
-        items: 3.2,
+        items: 3,
         nav: true,
       },
     },
