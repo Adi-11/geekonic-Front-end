@@ -747,7 +747,7 @@ input[type="number"]:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-right: 10px;
+  justify-content: center;
   opacity: 0;
   transition: 0.2s linear;
   font-size: 2rem;

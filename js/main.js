@@ -122,7 +122,7 @@
         nav: true,
       },
       600: {
-        items: 2,
+        items: 1.9,
         nav: true,
       },
       1000: {
