@@ -83,6 +83,13 @@
     }
   });
 
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+
   // Navigation active state on scroll
   var nav_sections = $("section");
   var main_nav = $(".main-nav-v, .mobile-nav-v");
