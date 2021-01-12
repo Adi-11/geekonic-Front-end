@@ -1222,6 +1222,7 @@ footer .sci {
 footer .sci .item {
   font-size: 2rem;
   align-items: center;
+  display: flex;
 }
 
 footer .sci .item a {
