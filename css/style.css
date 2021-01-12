@@ -776,6 +776,7 @@ input[type="number"]:focus,
   background-color: rgb(255, 255, 255);
   opacity: 0.9;
   border-radius: 50%;
+  margin-top: 4%;
   width: 50px;
   left: 0px;
   color: red;
@@ -786,6 +787,7 @@ input[type="number"]:focus,
   background-color: rgb(255, 255, 255);
   opacity: 0.9;
   border-radius: 50%;
+  margin-top: 4%;
   width: 50px;
   right: 0px;
   color: red;
@@ -889,8 +891,7 @@ input[type="number"]:focus,
   height: 100%;
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 40deg)) translateZ(400px);
-  -webkit-box-reflect: below 0px linear-gradient;
+  transform: rotateY(calc(var(--i) * 36deg)) translateZ(400px);
 }
 
 #team .box span img {
@@ -965,7 +966,7 @@ input[type="number"]:focus,
 }
 
 #contact .section-header {
-  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 #contact .contact-body {
@@ -1514,7 +1515,7 @@ footer .sci .item a:hover span {
   }
 }
 
-@media screen and (max-width: 1092px) {
+@media screen and (max-width: 1000px) {
   footer .sci .item a span {
     position: absolute;
     top: 60%;
@@ -1525,7 +1526,7 @@ footer .sci .item a:hover span {
     white-space: nowrap;
     color: rgb(255, 255, 255);
     border-radius: 10px;
-    background-color: rgb(66, 65, 65);
+    background-color: rgb(0, 0, 0);
     pointer-events: none;
     user-select: none;
     opacity: 0;

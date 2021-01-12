@@ -116,6 +116,7 @@
     loop: true,
     margin: 20,
     nav: true,
+    center: true,
     navText: [
       "<div class='nav-btn prev-slide'></div>",
       "<div class='nav-btn next-slide'></div>",
@@ -133,7 +134,7 @@
         nav: true,
       },
       1000: {
-        items: 3,
+        items: 2.2,
         nav: true,
       },
     },
