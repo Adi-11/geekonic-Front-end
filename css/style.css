@@ -124,8 +124,8 @@ input[type="number"]:focus,
 
 #header.header-scrolled,
 #header.header-pages {
-  height: 60px;
-  padding: 10px 0;
+  height: 65px;
+  padding-top: 12px;
 }
 
 #header .logo h1 {
@@ -150,14 +150,13 @@ input[type="number"]:focus,
   font-family: SheepingDogs;
   color: #ffffff;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 #header .logo img {
   padding: 0;
-  margin: 7px 0;
-  max-height: 40px;
-  max-width: 40px;
+  margin-top: -1px;
+  max-width: 44px;
 }
 
 .main-pages {
@@ -240,7 +239,7 @@ input[type="number"]:focus,
 
 #intro {
   width: 100%;
-  padding: 210px 0 100px;
+  padding: 210px 0 60px;
   overflow: hidden;
   position: relative;
   background: #1d1d1d;
@@ -474,12 +473,8 @@ input[type="number"]:focus,
 
 #services {
   /* background: #1d1d1d; */
-  background-image: linear-gradient(
-      to top,
-      rgba(10, 5, 5, 0.808),
-      rgba(0, 0, 0, 1)
-    ),
-    url("../img/gk/Geekonix Logo_White.png");
+  background-image: linear-gradient(to top, rgba(10, 5, 5, 0.479), rgb(0, 0, 0)),
+    url("../img/gk/Geekonix Logo_Black.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -491,6 +486,8 @@ input[type="number"]:focus,
 
 #services .section-header {
   filter: contrast(4);
+  padding-bottom: 40px;
+  padding-top: 10px;
 }
 
 #services .section-header h3 {
@@ -609,6 +606,11 @@ input[type="number"]:focus,
   border-color: #140c0c;
   border-bottom: 1px solid black;
   transform: scale(1.05);
+}
+
+#why-us h3 {
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 #why-us .card i {
@@ -829,7 +831,7 @@ input[type="number"]:focus,
 
 /* guest start */
 #team {
-  padding: 100px 0 100px;
+  padding: 70px 0 120px 0;
   overflow: hidden;
   position: relative;
   background: #1d1d1d;
@@ -1013,6 +1015,16 @@ input[type="number"]:focus,
   margin-left: -50px;
 }
 
+.c-address p {
+  color: white;
+  font-size: 1rem;
+}
+
+.c-address i {
+  color: red;
+  font-size: 3rem;
+}
+
 iframe {
   border-radius: 10px;
   border: 0;
@@ -1116,6 +1128,11 @@ iframe {
 #contact .form button[type="submit"]:hover {
   background: #ff0000;
   cursor: pointer;
+  outline: none !important;
+}
+
+.c-address {
+  display: none;
 }
 /* contact us end */
 
@@ -1168,7 +1185,7 @@ footer .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-bottom: 30px;
+  margin-bottom: -20px;
 }
 
 footer .container .sec {
@@ -1206,21 +1223,23 @@ footer p {
 
 footer .copyright {
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(227, 222, 222);
   margin: auto;
+  font-size: 0.9rem;
 }
 
 footer .sci {
-  margin-top: 20px;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   margin-left: -20px;
   margin-right: -15px;
+  margin-bottom: 40px;
 }
 
 footer .sci .item {
-  font-size: 2rem;
+  font-size: 2.1rem;
   align-items: center;
   display: flex;
 }
@@ -1343,7 +1362,7 @@ footer .sci .item a:hover span {
     margin-top: -5px;
     cursor: pointer;
     border-radius: 50%;
-    transition: background-color 0.15s linear;
+    transition: background-color 0.4s linear;
   }
   .nav__toggle1:hover,
   .nav__toggle1:focus {
@@ -1398,15 +1417,22 @@ footer .sci .item a:hover span {
   }
 
   .nav__link1 {
-    color: #d00b02;
     display: block;
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 500;
-    font-family: Frijole;
+    font-family: "SheepingDogs", cursive;
     text-decoration: none;
     padding: 1rem;
+  }
+
+  .nav__item1:nth-child(odd) a {
+    color: #d00b02;
+  }
+
+  .nav__item1:nth-child(even) a {
+    color: white;
   }
 
   .nav__link1:hover,
@@ -1598,8 +1624,17 @@ footer .sci .item a:hover span {
     margin-right: 3%;
   }
 
+  .map-details {
+    padding-top: 30px;
+  }
+
+  #contact {
+    padding-bottom: 30px;
+  }
+
   footer {
     padding: 40px;
+    padding-top: 20px;
   }
   footer .container {
     flex-direction: column;
@@ -1616,7 +1651,7 @@ footer .sci .item a:hover span {
 
 @media screen and (max-width: 767px) {
   p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-indent: center;
   }
 
@@ -1666,12 +1701,26 @@ footer .sci .item a:hover span {
     height: 312px;
   }
 
+  /* 
+  footer .container .sec.contact {
+    display: block;
+  } */
+
+  #contact {
+    padding: 0;
+  }
+
   #contact .contact-body .map-view .map-details {
     display: none;
   }
-
-  footer .container .sec.contact {
+  .c-address {
     display: block;
+  }
+
+  .c-comm:first-child p {
+    display: inline-block;
+    position: relative;
+    bottom: 12px;
   }
 }
 
@@ -1684,13 +1733,24 @@ footer .sci .item a:hover span {
     margin-right: 50px;
   }
 
-  #header .logo img {
-    height: 60px;
-    margin-left: 30px;
+  #intro .img-fluid {
+    max-width: 75%;
+    height: auto;
+    padding-top: 15px;
   }
+
+  #intro {
+    padding: 150px 0 60px;
+  }
+
+  #header .logo img {
+    height: 30px;
+    margin-top: -5px;
+  }
+
   #header .logo h1 a span,
   #header .logo h1 a span:hover {
-    display: none;
+    font-size: 1.8rem;
   }
 
   #header .logo h1 a {
@@ -1708,7 +1768,7 @@ footer .sci .item a:hover span {
     font-weight: 400;
   }
   .nav__link1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   #intro .intro-info .btn-get-started,
@@ -1719,6 +1779,26 @@ footer .sci .item a:hover span {
   #services .box .icon {
     margin-top: 40px;
   }
+  .map {
+    text-align: center;
+  }
+
+  .c-comm i {
+    font-size: 2.5rem;
+  }
+
+  .c-comm:first-child p {
+    display: block;
+  }
+
+  footer .sci {
+    margin-top: 40px;
+  }
+
+  footer .sci .item {
+    font-size: 1.8rem;
+  }
+
   footer .sci .item a span {
     display: none;
   }
