@@ -8,6 +8,9 @@
         .delay(400)
         .fadeOut("slow", function () {
           $(this).remove();
+          const typing = document.querySelector("#intro .intro-info h1");
+          typing.style.animation =
+            "animated-text 2s steps(30, end) 1s 1 normal both;";
         });
     }
   });
