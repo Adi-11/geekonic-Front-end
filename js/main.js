@@ -8,9 +8,6 @@
         .delay(100)
         .fadeOut("slow", function () {
           $(this).remove();
-          $(function () {
-            $("#intro .intro-info .intro").addClass("go");
-          });
         });
     }
   });

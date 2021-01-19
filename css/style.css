@@ -272,67 +272,33 @@ input[type="number"]:focus,
 
 #intro .intro-info {
   text-align: center;
-  width: 37%;
+  width: 40%;
   float: left;
 }
 
-#intro .intro-info svg.intro {
-  background: transparent;
-  max-width: 100%;
-  top: 50%;
-  left: 10%;
-}
-
-#intro .intro-info svg.intro .text {
-  font-size: 4rem;
-  display: none;
-}
-
-#intro .intro-info svg.intro.go .text {
+#intro .intro-info h1 {
+  color: #fff;
+  margin-bottom: 40px;
   font-family: "Roboto Mono", monospace;
-  font-size: 20px;
-  /* text-transform: uppercase; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 3rem;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: animated-text 2s steps(35, end) 1s 1 normal both;
 }
 
-#intro .intro-info svg.intro.go .text-stroke {
-  fill: none;
-  stroke: #ffffff;
-  stroke-width: 2.8px;
-  stroke-dashoffset: -200;
-  stroke-dasharray: 200;
-  stroke-linecap: butt;
-  stroke-linejoin: round;
-  animation: dash 1s forwards;
-}
-
-#intro .intro-info svg.intro.go .text-stroke:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-#intro .intro-info svg.intro.go .text-stroke:nth-child(3) {
-  animation-delay: 1s;
-}
-
-#intro .intro-info svg.intro.go .text-stroke-2 {
-  stroke: #ff1205;
-  animation-delay: 1.5s;
-}
-
-#intro .intro-info svg.intro.go .text-stroke:nth-child(5) {
-  animation-delay: 1.8s;
-}
-
-#intro .intro-info svg.intro.go .text-stroke:nth-child(6) {
-  animation-delay: 2s;
-}
-
-@keyframes dash {
-  100% {
-    stroke-dashoffset: 0;
+@keyframes animated-text {
+  from {
+    width: 0;
   }
+  to {
+    width: 330px;
+  }
+}
+
+#intro .intro-info h1 span {
+  font-family: "Roboto Mono", monospace;
+  color: #ff0d00;
 }
 
 .hover-zoomin a {
