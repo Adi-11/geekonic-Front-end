@@ -1737,7 +1737,7 @@ footer .sci .item a:hover span {
     font-size: 1rem;
   }
 
-  #intro .intro-info h1 {
+  #intro .intro-info h1.show {
     font-size: 1rem;
     max-width: 280px;
     font-size: 2rem;
@@ -1785,7 +1785,7 @@ footer .sci .item a:hover span {
 }
 
 @media screen and (max-width: 300px) {
-  #intro .intro-info h1 {
+  #intro .intro-info h1.show {
     max-width: 200px;
     font-size: 1.3rem;
     padding: 0;
