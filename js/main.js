@@ -5,12 +5,12 @@
   $(window).on("load", function () {
     if ($("#loading").length) {
       $("#loading")
-        .delay(400)
+        .delay(100)
         .fadeOut("slow", function () {
           $(this).remove();
-          const typing = document.querySelector("#intro .intro-info h1");
-          typing.style.animation =
-            "animated-text 2s steps(30, end) 1s 1 normal both;";
+          $(function () {
+            $("#intro .intro-info .intro").addClass("go");
+          });
         });
     }
   });
