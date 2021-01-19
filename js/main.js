@@ -8,6 +8,7 @@
         .delay(100)
         .fadeOut("slow", function () {
           $(this).remove();
+          $("#intro .intro-info h1").addClass("show");
         });
     }
   });
