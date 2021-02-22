@@ -1,23 +1,143 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Page Not Found</title>
-
+    <link href="img/Geekonix-Logo_Black.ico" rel="icon" />
     <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px 16px; border-radius: 3px; }
-      #message h3 { color: #888; font-weight: normal; font-size: 16px; margin: 16px 0 12px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+      body {
+        overflow: hidden;
+        position: relative;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(5, 5, 5, 0.842),
+          rgba(0, 0, 0, 1)
+        );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode: screen;
+      }
+      #message {
+        position: absolute;
+        left: 400px;
+        top: 400px;
+        transform: translateY(-60%);
+        font-family: "Roboto Mono", monospace;
+        color: #363e49;
+      }
+      #message h2 {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 8rem;
+        margin: 0 0 8px;
+      }
+      #message h1 {
+        font-size: 4rem;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 300;
+        color: rgb(255, 0, 0);
+        margin: 0 0 16px;
+      }
+      #img {
+        margin-top: 70px;
+        position: relative;
+        width: 185px;
+        height: 130px;
+        left: 50%;
+        top: 60%;
+        /* transform: translate(-20%, 20%) rotate(0deg) scale(1); */
+        animation: spin 3s cubic-bezier(0.17, 0.49, 0.96, 0.76) infinite;
+        -webkit-animation: spin 3s cubic-bezier(0.17, 0.49, 0.96, 0.76) infinite;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+      }
+      @keyframes spin {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(40px);
+        }
+      }
+      @-webkit-keyframes spin {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(40px);
+        }
+      }
+      #img img {
+        width: 30rem;
+        height: 30rem;
+      }
+      @media (max-width: 1600px) {
+        #message {
+          left: 200px;
+          top: 300px;
+        }
+        #img img {
+          width: 25rem;
+          height: 25rem;
+        }
+      }
+
+      @media (max-width: 1300px) {
+        #message h2 {
+          font-size: 5rem;
+        }
+        #message h1 {
+          font-size: 2rem;
+        }
+
+        #img {
+          top: 100px;
+        }
+
+        #img img {
+          width: 20rem;
+          height: 20rem;
+        }
+      }
+      @media (max-width: 800px) {
+        body {
+          overflow: hidden;
+          position: relative;
+          background-image: linear-gradient(
+            to bottom,
+            rgba(5, 5, 5, 0.842),
+            rgba(0, 0, 0, 1)
+          );
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          background-attachment: fixed;
+          background-blend-mode: screen;
+        }
+        #message {
+          position: absolute;
+          left: 100px;
+          top: 200px;
+          transform: translateY(-60%);
+          font-family: "Roboto Mono", monospace;
+          color: #363e49;
+        }
+
+        #message h2 {
+          font-size: 5rem;
+        }
+        #message h1 {
+          font-size: 2rem;
+        }
+
+        #img {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -25,9 +145,9 @@
     <div id="message">
       <h2>404</h2>
       <h1>Page Not Found</h1>
-      <p>The specified file was not found on this website. Please check the URL for mistakes and try again.</p>
-      <h3>Why am I seeing this?</h3>
-      <p>This page was generated by the Firebase Command-Line Interface. To modify it, edit the <code>404.html</code> file in your project's configured <code>public</code> directory.</p>
+    </div>
+    <div id="img">
+      <img src="./img/gk/Geekonix Logo_White.png" alt="" />
     </div>
   </body>
 </html>
